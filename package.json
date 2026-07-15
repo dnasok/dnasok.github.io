@@ -18,13 +18,12 @@
     "react-scripts": "^5.0.1",
     "react-test-renderer": "^16.10.2",
     "react-twitter-embed": "3.0.3",
-    "sass": "^1.32.8",
-    "sharp": "^0.34.5"
+    "sass": "^1.32.8"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
+    "start": "node scripts/fetch.js && react-scripts start",
+    "build": "node scripts/fetch.js && react-scripts build",
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
