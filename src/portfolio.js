@@ -94,7 +94,7 @@ const educationInfo = {
     {
       schoolName: "Nanyang Polytechnic",
       logo: require("./assets/images/nyp_logo.jpg"),
-      subHeader: "Diploma in Game Development & Technology | 3.44",
+      subHeader: "Diploma in Game Development & Technology",
       duration: "April 2018 - March 2021",
       // duration: "16 April 2018 - 18 March 2021",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
@@ -103,7 +103,7 @@ const educationInfo = {
     {
       schoolName: "Institute of Technical Education",
       logo: require("./assets/images/ite_logo.jpg"),
-      subHeader: "Higher Nitec in Games Programming & Development | 3.377",
+      subHeader: "Higher Nitec in Games Programming & Development",
       duration: "April 2016 - March 2018",
       // duration: "7 April 2016 - 20 March 2018",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
@@ -113,7 +113,7 @@ const educationInfo = {
     {
       schoolName: "Institute of Technical Education",
       logo: require("./assets/images/ite_logo.jpg"),
-      subHeader: "Nitec in Social Media & Web Development | 3.559",
+      subHeader: "Nitec in Social Media & Web Development",
       duration: "January 2014 - December 2015",
       // duration: "12 January 2014 - 11 December 2015",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
@@ -145,14 +145,11 @@ const workExperiences = {
       company: "DBS Bank",
       companylogo: require("./assets/images/dbs_logo.jpg"),
       date: "May 2026 – Present",
-      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Building and maintaining automated test suites at DBS Bank to improve QA efficiency and coverage across product features.",
       descBullets: [
-        "Collaborate with project teams to understand application functionalities and user stories to identify suitable candidates for test automation.",
-        "Design, develop, and implement automated test cases for new features and existing functionalities using chosen automation tools and frameworks.",
-        "Conduct detailed reviews of current manual test cases and identify opportunities for automation, leading to increased efficiency and coverage.",
-        // "Maintain and update existing automated test suites to ensure their continued relevance and effectiveness with evolving software.",
-        // "Execute automated tests, analyze results, and report defects with clear, concise, and reproducible steps.",
-        // "Participate in team meetings and contribute to discussions on improving overall quality assurance processes."
+        "Design, develop, and implement automated test cases for new and existing features using chosen automation tools and frameworks.",
+        "Review current manual test cases to identify automation opportunities, increasing efficiency and coverage.",
+        "Execute automated tests, analyze results, and report defects with clear, reproducible steps."
       ]
     },
     {
@@ -171,48 +168,36 @@ const workExperiences = {
       role: "Protective Security Command Trooper",
       company: "Singapore Police Force",
       companylogo: require("./assets/images/spf_logo.jpg"),
-      date: "May 2021 – May 2023",
-      //date: "19 May 2021 – 18 May 2023",
-      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "19 May 2021 – 18 May 2023",
+      desc: "Served as a Protective Security Command Trooper, safeguarding critical infrastructure and supporting national security operations under high-pressure conditions.",
       descBullets: [
         "Conducted high-visibility police patrols at security-sensitive locations and safeguarded key installations and government buildings.",
         "Protected and secured Critical Infrastructure (CIs) during peacetime, heightened threat levels, and national emergencies.",
-        "Supported major national and public events by responding to security incidents and ensuring public safety.",
-        // "Completed intensive training in risk assessment, weapon handling, and tactical room clearance.",
-        // "Developed strong leadership, teamwork, and communication skills in high-pressure environments.",
-        // "Adapted quickly to dynamic security challenges and coordinated effectively with a team of trained troopers.",
-        // "Awarded Best in Operational Fitness during the Police Officers Basic Course."
+        "Supported major national and public events by responding to security incidents and ensuring public safety."
       ]
     },
     {
       role: "Software Engineer Intern",
       company: "VizioFly - Virtual Reality Singapore",
       companylogo: require("./assets/images/viziofly_logo.jpg"),
-      date: "June 2020 – August 2020",
-      // date: "1 June 2020 – 21 August 2020",
-      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "1 June 2020 – 21 August 2020",
+      desc: "Developed immersive AR/VR experiences in Unity for corporate, tourism, and education clients, with a focus on UI/UX and cross-platform performance.",
       descBullets: [
         "Contributed to immersive AR/VR development for corporate, tourism, and educational clients, building interactive media content using Unity and C#.",
         "Designed and implemented responsive UI elements that prioritized user experience and device compatibility across desktop and mobile platforms.",
-        "Collaborated with a multidisciplinary team to deliver features on schedule, enhancing functionality across multiple VR/AR projects.",
-        // "Identified and resolved bugs, optimized performance, and contributed to version updates for key product releases.",
-        // "Authored clear, maintainable software documentation to streamline future handoffs and scalability.",
-        // "Gained hands-on experience in immersive technologies, including virtual tourism and real-time training solutions."
+        "Identified and resolved bugs, optimized performance, and contributed to version updates for key product releases."
       ]
     },
     {
       role: "Software Engineer Intern",
       company: "Viswire",
       companylogo: require("./assets/images/viswire_logo.jpg"),
-      date: "October 2017 – December 2017",
-      // date: "2 October 2017 – 29 December 2017",
-      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "2 October 2017 – 29 December 2017",
+      desc: "Developed real-time simulation systems in Unity for professional training and research, emphasizing visual accuracy and interactivity.",
       descBullets: [
         "Assisted in developing real-time simulation systems for professional training and research, focusing on visual realism and performance efficiency.",
         "Built and tested core simulation features in Unity, with a strong emphasis on accuracy, latency minimization, and user interactivity.",
-        "Improved user interface responsiveness and contributed to UI/UX refinements for high-stakes training environments.",
-        // "Engaged in full-cycle development including feature prototyping, testing, debugging, and deployment.",
-        // "Collaborated closely with simulation engineers and researchers to align software components with technical requirements."
+        "Engaged in full-cycle development including feature prototyping, testing, debugging, and deployment."
       ]
     }
   ]
