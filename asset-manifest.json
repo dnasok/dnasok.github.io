@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e70ea13.css",
-    "main.js": "/static/js/main.3e85ceb5.js",
-    "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
+    "main.css": "/static/css/main.38e21ff8.css",
+    "main.js": "/static/js/main.2625b1d1.js",
+    "static/css/487.1eb05f47.chunk.css": "/static/css/487.1eb05f47.chunk.css",
     "static/js/487.f21af58c.chunk.js": "/static/js/487.f21af58c.chunk.js",
-    "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
+    "static/css/990.5fc27a67.chunk.css": "/static/css/990.5fc27a67.chunk.css",
     "static/js/990.f96acaa1.chunk.js": "/static/js/990.f96acaa1.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/oc_logo.png": "/static/media/oc_logo.55a7a53a41adfd39208a.png",
@@ -25,15 +25,15 @@
     "static/media/skill.svg": "/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.8e70ea13.css.map": "/static/css/main.8e70ea13.css.map",
-    "main.3e85ceb5.js.map": "/static/js/main.3e85ceb5.js.map",
-    "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
+    "main.38e21ff8.css.map": "/static/css/main.38e21ff8.css.map",
+    "main.2625b1d1.js.map": "/static/js/main.2625b1d1.js.map",
+    "487.1eb05f47.chunk.css.map": "/static/css/487.1eb05f47.chunk.css.map",
     "487.f21af58c.chunk.js.map": "/static/js/487.f21af58c.chunk.js.map",
-    "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
+    "990.5fc27a67.chunk.css.map": "/static/css/990.5fc27a67.chunk.css.map",
     "990.f96acaa1.chunk.js.map": "/static/js/990.f96acaa1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e70ea13.css",
-    "static/js/main.3e85ceb5.js"
+    "static/css/main.38e21ff8.css",
+    "static/js/main.2625b1d1.js"
   ]
 }
