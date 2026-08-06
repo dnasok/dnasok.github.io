@@ -39,9 +39,7 @@ const socialMediaLinks = {
   github: "https://github.com/dnasok",
   linkedin: "https://www.linkedin.com/in/lum-ko-sand/",
   gmail: "lum_ko_sand@outlook.com",
-  // gitlab: "https://gitlab.com/-",
-  // stackoverflow: "https://stackoverflow.com/users/-",
-  // Instagram, Twitter and Kaggle are also supported in the links!
+  youtube: "https://www.youtube.com/@dnasok8",
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
@@ -157,7 +155,7 @@ const workExperiences = {
       company: "Dnasok Games",
       companylogo: require("./assets/images/dnasokgames_logo.jpg"),
       date: "October 2021 – March 2026",
-      desc: "Making small games during free time!",
+      desc: "Making indie games during free time!",
       descBullets: [
         "Independently designed and developed indie games using Unity (C#), including Tiny Arcade Racers, available on Steam and Google Play Store.",
         "Managed all aspects of game development from concept, programming, design, testing, to publishing.",
@@ -386,11 +384,11 @@ const podcastSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me"),
   subtitle:
     "Feel free to send me a message if you are interested in learning more about my work or how we can collaborate on an upcoming project :)",
   //number: "+65 9766 5607",
