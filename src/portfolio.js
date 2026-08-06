@@ -216,18 +216,85 @@ const bigProjects = {
   subtitle: "PERSONAL, ACADEMIC, AND PROFESSIONAL GAME PROJECTS",
   projects: [
     {
+      slug: "machina",
       image: require("./assets/images/machina_logo.jpg"),
       projectName: "Machina",
-      projectDesc: "Machina is a first-person steampunk puzzle-platformer set in an experimental facility, where players sacrifice their own life essence to power a weapon that enables teleportation, blinding light, and enemy manipulation in order to escape.",
+      projectDesc: "A first-person steampunk puzzle-platformer where players sacrifice life essence to power a weapon enabling teleportation, blinding light, and enemy manipulation.",
+      detail: {
+        tagline: "Sacrifice to survive. Escape the facility.",
+        genre: "First-Person Puzzle Platformer",
+        engine: "Custom C++ Engine",
+        platform: "PC",
+        team: "Academic Team Project",
+        duration: "1 Academic Year",
+        role: "Gameplay Programmer",
+        overview:
+          "Machina is a first-person steampunk puzzle-platformer set in an experimental facility. Players sacrifice their own life essence to power a weapon that grants three abilities — teleportation, blinding light, and enemy manipulation — in order to solve puzzles and escape. The game was built on a custom C++ engine as an academic project.",
+        contributions: [
+          "Designed and implemented the core life-essence resource system that governs all three weapon abilities",
+          "Programmed teleportation, light flash, and enemy manipulation mechanics with full state management",
+          "Built first-person player controller including movement, jumping, and interaction systems",
+          "Collaborated on level design to ensure puzzles were balanced around the resource expenditure loop",
+          "Integrated audio and visual feedback systems tied to ability usage and player health"
+        ],
+        techStack: ["C++", "Custom Engine", "GLFW", "OpenGL", "Git"],
+        videos: [
+          { label: "Game Trailer", youtubeId: "nZZCTPWUmuY" },
+          { label: "Gameplay Showcase", youtubeId: "o_VmUnK94wQ" }
+        ],
+        screenshots: [
+          // Add screenshot paths here e.g. require("./assets/images/machina_ss1.jpg")
+        ],
+        links: [
+          { name: "Game Trailer", url: "https://youtu.be/nZZCTPWUmuY" },
+          { name: "Gameplay Showcase", url: "https://youtu.be/o_VmUnK94wQ" }
+        ]
+      },
       footerLink: [
         { name: "Game Trailer", url: "https://youtu.be/nZZCTPWUmuY" },
         { name: "Gameplay Showcase", url: "https://youtu.be/o_VmUnK94wQ" }
       ]
     },
     {
+      slug: "ukemochi",
       image: require("./assets/images/ukemochi_logo.jpg"),
       projectName: "Ukemochi",
-      projectDesc: "2D action-adventure game built on a custom C++ engine. Designed and implemented physics, collision detection, UI systems, and engine architecture. Led technical development for an 8-person team.",
+      projectDesc: "2D action-adventure game built on a custom C++ engine. Led technical development for an 8-person team — physics, collision, UI systems, and engine architecture from scratch.",
+      detail: {
+        tagline: "Built from scratch. Shipped as a team.",
+        genre: "2D Action-Adventure",
+        engine: "Custom C++ Engine (built in-house)",
+        platform: "PC",
+        team: "8-Person Academic Team",
+        duration: "1 Academic Year",
+        role: "Technical Lead / Engine & Gameplay Programmer",
+        overview:
+          "Ukemochi is a 2D action-adventure game developed entirely on a custom C++ engine built from the ground up by the team. As Technical Lead, I was responsible for core engine systems and overseeing the technical direction for a team of 8. The game was featured in the DigiPen Game Gallery and selected as part of the SG60 Games showcase.",
+        contributions: [
+          "Led technical development for an 8-person team, owning the engine architecture and development roadmap",
+          "Designed and implemented a custom physics system including rigid body dynamics and broad/narrow phase collision detection",
+          "Built the UI framework from scratch, supporting menus, HUD elements, and in-game overlays",
+          "Developed the entity-component system powering all game objects and behaviours",
+          "Integrated and managed the audio system, scripting pipeline, and asset loading",
+          "Coordinated with designers and artists to establish tooling and asset pipeline workflows"
+        ],
+        techStack: ["C++", "Custom Engine", "OpenGL", "FMOD", "Git"],
+        videos: [
+          { label: "Game Trailer", youtubeId: "0_TAAYTXHKI" },
+          { label: "Gameplay Showcase", youtubeId: "nMMa7cYqeYU" },
+          { label: "Engine Showcase", youtubeId: "RvnJPcnqqn0" }
+        ],
+        screenshots: [
+          // Add screenshot paths here
+        ],
+        links: [
+          { name: "DigiPen Game Gallery", url: "https://games.digipen.edu/games/ukemochi" },
+          { name: "SG60 Games Feature", url: "https://sgga.org.sg/sg60-games" },
+          { name: "Game Trailer", url: "https://youtu.be/0_TAAYTXHKI" },
+          { name: "Gameplay Showcase", url: "https://youtu.be/nMMa7cYqeYU" },
+          { name: "Engine Showcase", url: "https://youtu.be/RvnJPcnqqn0" }
+        ]
+      },
       footerLink: [
         { name: "DigiPen Game Gallery", url: "https://games.digipen.edu/games/ukemochi" },
         { name: "SG60 Games Feature", url: "https://sgga.org.sg/sg60-games" },
@@ -237,9 +304,41 @@ const bigProjects = {
       ]
     },
     {
+      slug: "tiny-arcade-racers",
       image: require("./assets/images/tar_logo.png"),
-      projectName: "Tiny Arcade Racers (Unity / C#)",
-      projectDesc: "Top-down 2.5D arcade racing game featuring AI opponents, time trials, and vehicle customization. Shipped on PC and mobile.",
+      projectName: "Tiny Arcade Racers",
+      projectDesc: "Top-down 2.5D arcade racing game with AI opponents, time trials, and vehicle customization. Shipped independently on Steam and Google Play.",
+      detail: {
+        tagline: "Race. Customise. Compete.",
+        genre: "Arcade Racing",
+        engine: "Unity",
+        platform: "PC (Steam) · Android (Google Play)",
+        team: "Solo / Indie",
+        duration: "~1 Year",
+        role: "Solo Developer",
+        overview:
+          "Tiny Arcade Racers is a top-down 2.5D arcade racing game featuring AI opponents with dynamic difficulty, time trial modes, and vehicle customization. Developed and published independently under Dnasok Games, the game is available on both Steam and the Google Play Store. Every aspect — design, programming, testing, and publishing — was handled solo.",
+        contributions: [
+          "Designed and programmed all gameplay systems including racing AI, lap tracking, and vehicle physics",
+          "Implemented a vehicle customization system with visual and stat-affecting components",
+          "Built time trial mode with ghost car recording and playback",
+          "Created adaptive AI opponents that scale difficulty based on player performance",
+          "Handled full publishing pipeline for Steam (Steamworks) and Google Play including store pages, builds, and compliance",
+          "Designed all UI/UX including menus, HUD, and results screens"
+        ],
+        techStack: ["Unity", "C#", "Steamworks SDK", "Google Play SDK", "Git"],
+        videos: [
+          { label: "Game Trailer", youtubeId: "FiQC6qBMrrQ" }
+        ],
+        screenshots: [
+          // Add screenshot paths here
+        ],
+        links: [
+          { name: "Game Trailer", url: "https://youtu.be/FiQC6qBMrrQ" },
+          { name: "Steam", url: "https://store.steampowered.com/app/1989780" },
+          { name: "Google Play", url: "https://play.google.com/store/apps/details?id=com.DnasokGames.TinyArcadeRacers" }
+        ]
+      },
       footerLink: [
         { name: "Game Trailer", url: "https://youtu.be/FiQC6qBMrrQ" },
         { name: "Steam", url: "https://store.steampowered.com/app/1989780" },
@@ -247,9 +346,39 @@ const bigProjects = {
       ]
     },
     {
+      slug: "orion-chasers",
       image: require("./assets/images/oc_logo.png"),
-      projectName: "Orion Chasers (Unity / C#)",
-      projectDesc: "Space-themed endless runner focused on score-chasing mechanics and mobile-friendly controls. Released on Google Play.",
+      projectName: "Orion Chasers",
+      projectDesc: "Space-themed endless runner focused on score-chasing mechanics and mobile-first controls. Published on Google Play.",
+      detail: {
+        tagline: "Chase the stars. Beat your score.",
+        genre: "Endless Runner",
+        engine: "Unity",
+        platform: "Android (Google Play)",
+        team: "Solo / Indie",
+        duration: "~6 Months",
+        role: "Solo Developer",
+        overview:
+          "Orion Chasers is a space-themed endless runner designed from the ground up for mobile. The game focuses on tight, satisfying score-chasing gameplay with mobile-friendly one-touch controls. Developed and published independently on the Google Play Store under Dnasok Games.",
+        contributions: [
+          "Designed and built the core endless runner loop including procedural obstacle generation and difficulty scaling",
+          "Implemented mobile-optimised one-touch control scheme with responsive feel",
+          "Built a persistent high score and leaderboard system",
+          "Designed all in-game UI, menus, and feedback systems",
+          "Handled full Google Play publishing pipeline including store listing and APK submission"
+        ],
+        techStack: ["Unity", "C#", "Google Play SDK", "Git"],
+        videos: [
+          { label: "Game Trailer", youtubeId: "QQ5hHTTyYzQ" }
+        ],
+        screenshots: [
+          // Add screenshot paths here
+        ],
+        links: [
+          { name: "Game Trailer", url: "https://youtu.be/QQ5hHTTyYzQ" },
+          { name: "Google Play", url: "https://play.google.com/store/apps/details?id=com.DnasokGames.OrionChasers" }
+        ]
+      },
       footerLink: [
         { name: "Game Trailer", url: "https://youtu.be/QQ5hHTTyYzQ" },
         { name: "Google Play", url: "https://play.google.com/store/apps/details?id=com.DnasokGames.OrionChasers" }

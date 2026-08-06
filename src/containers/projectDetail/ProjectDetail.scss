@@ -1,0 +1,314 @@
+@import "../../_globalColor";
+
+/* ── Container ──────────────────────────────────────────── */
+.project-detail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+}
+
+/* ── Back button ─────────────────────────────────────────── */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: 1px solid $lightBorder1;
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: $subTitle;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  margin-bottom: 2.5rem;
+}
+
+.back-button:hover {
+  color: $buttonColor;
+  border-color: $buttonColor;
+}
+
+.dark-mode.back-button {
+  color: $textColorDark;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode.back-button:hover {
+  color: $progressBarSpanBG;
+  border-color: $progressBarSpanBG;
+}
+
+/* ── Hero ────────────────────────────────────────────────── */
+.project-detail-hero {
+  margin-bottom: 3rem;
+}
+
+.project-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.project-hero-image {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 1px solid $lightBorder1;
+  background: $lightBackground3;
+}
+
+.project-detail-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $titleColor;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.dark-mode.project-detail-title {
+  color: $textColorDark;
+}
+
+.project-detail-tagline {
+  font-size: 1.15rem;
+  color: $subTitle;
+  margin: 0;
+  font-style: italic;
+}
+
+.dark-mode.project-detail-tagline {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Info Grid ───────────────────────────────────────────── */
+.project-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: $lightBackground3;
+  border: 1px solid $lightBorder1;
+  margin-bottom: 3rem;
+}
+
+.dark-mode .project-info-grid {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $subTitle;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: $titleColor;
+}
+
+.dark-mode.info-value {
+  color: $textColorDark;
+}
+
+/* ── Generic Section ─────────────────────────────────────── */
+.project-section {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $titleColor;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $lightBorder1;
+}
+
+.dark-mode.section-heading {
+  color: $textColorDark;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: $cardSubtitle;
+  margin: 0;
+}
+
+.dark-mode.section-text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Contributions ───────────────────────────────────────── */
+.contributions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contributions-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: $cardSubtitle;
+}
+
+.dark-mode .contributions-list li {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.contributions-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: $buttonColor;
+  font-size: 0.85rem;
+  top: 3px;
+}
+
+/* ── Tech Stack ──────────────────────────────────────────── */
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-tag {
+  background: $buttonColor;
+  color: $lightBackground3;
+  border-radius: 5px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.dark-mode.tech-tag {
+  background: rgba(47, 108, 182, 0.85);
+  color: $textColorDark;
+}
+
+/* ── Videos Grid ─────────────────────────────────────────── */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+/* ── Screenshots Grid ────────────────────────────────────── */
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.screenshot-image {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.screenshot-image:hover {
+  transform: scale(1.02);
+  box-shadow: $lightBoxShadowDark 0px 12px 30px -8px;
+}
+
+.placeholder-text {
+  color: $subTitle;
+  font-style: italic;
+}
+
+/* ── Links ───────────────────────────────────────────────── */
+.links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: $buttonColor;
+  color: $lightBackground3;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.link-button:hover {
+  background: $buttonHover;
+  transform: translateY(-2px);
+}
+
+.dark-mode.link-button {
+  background: rgba(47, 108, 182, 0.85);
+  color: $textColorDark;
+}
+
+.dark-mode.link-button:hover {
+  background: $buttonHover;
+}
+
+/* ── 404 ─────────────────────────────────────────────────── */
+.project-not-found {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* ── Media Queries ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 1.5rem 1.25rem 3rem;
+  }
+
+  .project-detail-title {
+    font-size: 2rem;
+  }
+
+  .project-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-title {
+    font-size: 1.6rem;
+  }
+}

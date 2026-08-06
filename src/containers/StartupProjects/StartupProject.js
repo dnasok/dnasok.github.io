@@ -3,8 +3,11 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import {useHistory} from "react-router-dom";
 
 export default function StartupProject() {
+  const history = useHistory();
+
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -12,6 +15,11 @@ export default function StartupProject() {
     var win = window.open(url, "_blank");
     win.focus();
   }
+
+  const handleCardClick = (slug) => {
+    history.push(`/projects/${slug}`);
+    window.scrollTo({top: 0, behavior: "smooth"});
+  };
 
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
@@ -42,6 +50,8 @@ export default function StartupProject() {
                       ? "dark-mode project-card project-card-dark"
                       : "project-card project-card-light"
                   }
+                  onClick={() => handleCardClick(project.slug)}
+                  style={{cursor: "pointer"}}
                 >
                   {project.image ? (
                     <div className="project-image">
@@ -74,7 +84,10 @@ export default function StartupProject() {
                               className={
                                 isDark ? "dark-mode project-tag" : "project-tag"
                               }
-                              onClick={() => openUrlInNewTab(link.url)}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                openUrlInNewTab(link.url);
+                              }}
                             >
                               {link.name}
                             </span>

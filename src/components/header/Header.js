@@ -3,6 +3,7 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
+import {useHistory, useLocation} from "react-router-dom";
 import {
   greeting,
   workExperiences,
@@ -18,6 +19,8 @@ import {
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const history = useHistory();
+  const location = useLocation();
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -28,10 +31,39 @@ function Header() {
   const viewEducation = educationInfo.display;
   const viewProjects = bigProjects.display;
 
+  const isProjectPage = location.pathname.startsWith("/projects/");
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    if (isProjectPage) {
+      history.push("/");
+    } else {
+      window.scrollTo({top: 0, behavior: "smooth"});
+    }
+  };
+
+  const handleNavClick = (e, hash) => {
+    e.preventDefault();
+    if (isProjectPage) {
+      history.push("/");
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({behavior: "smooth"});
+        }
+      }, 100);
+    } else {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({behavior: "smooth"});
+      }
+    }
+  };
+
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/" className="logo">
+        <a href="/" className="logo" onClick={handleLogoClick}>
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
@@ -47,47 +79,65 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={(e) => handleNavClick(e, "#skills")}>
+                Skills
+              </a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Experiences</a>
+              <a href="#experience" onClick={(e) => handleNavClick(e, "#experience")}>
+                Experiences
+              </a>
             </li>
           )}
           {viewEducation && (
             <li>
-              <a href="#education">Education</a>
+              <a href="#education" onClick={(e) => handleNavClick(e, "#education")}>
+                Education
+              </a>
             </li>
           )}
           {viewProjects && (
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={(e) => handleNavClick(e, "#projects")}>
+                Projects
+              </a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource" onClick={(e) => handleNavClick(e, "#opensource")}>
+                Open Source
+              </a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements" onClick={(e) => handleNavClick(e, "#achievements")}>
+                Achievements
+              </a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs" onClick={(e) => handleNavClick(e, "#blogs")}>
+                Blogs
+              </a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks" onClick={(e) => handleNavClick(e, "#talks")}>
+                Talks
+              </a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#resume" onClick={(e) => handleNavClick(e, "#resume")}>
+                Resume
+              </a>
             </li>
           )}
           {/* <li>
