@@ -17,6 +17,8 @@
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
+  font-family: inherit; /* reset <button> default font */
+  line-height: normal;  /* reset <button> default line-height */
 }
 .main-button:hover {
   background-color: $darkBoxShadow2;

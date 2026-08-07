@@ -39,7 +39,15 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <button
+                  className="main-button"
+                  onClick={() => {
+                    const el = document.getElementById("contact");
+                    if (el) el.scrollIntoView({behavior: "smooth"});
+                  }}
+                >
+                  Contact me
+                </button>
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
