@@ -19,6 +19,7 @@ All personal content (bio, experience, projects, links) is managed in one config
 | Layer | Technology |
 | --- | --- |
 | UI | React 16, SCSS |
+| Routing | react-router-dom 5 (HashRouter) |
 | Animations | Lottie, React Reveal |
 | Build | Create React App (`react-scripts`) |
 | Deployment | GitHub Actions → GitHub Pages |
@@ -28,12 +29,15 @@ All personal content (bio, experience, projects, links) is managed in one config
 
 ## Features
 
-- Responsive single-page layout with dark/light theme toggle
+- Responsive layout with dark/light theme toggle
 - Splash screen on first load
 - Sections for greeting, skills, education, work experience, featured projects, achievements, and contact
+- **Per-project detail pages** — each project card navigates to a dedicated page showing overview, role, contributions, tech stack, embedded YouTube videos, screenshots, and links
+- Hash-based routing (`HashRouter`) — works on GitHub Pages without any server configuration
+- YouTube social media button alongside GitHub, LinkedIn, and Gmail
 - Optional GitHub profile and pinned repositories (via API)
 - Optional Medium blog feed
-- Automated deployment on push to `master`
+- Automated deployment on push to `main`
 
 ---
 
@@ -112,6 +116,16 @@ Most content is edited in [`src/portfolio.js`](src/portfolio.js):
 - Skills and tech stack proficiency bars
 - Education, work experience, featured projects, achievements
 - Section visibility (`display: true/false` flags)
+- Per-project detail content: `slug`, `role`, `overview`, `contributions`, `techStack`, `videos`, `screenshots`, and `links`
+
+To add screenshots to a project detail page, drop image files into `src/assets/images/` and add them to the project's `screenshots` array:
+
+```js
+screenshots: [
+  require("./assets/images/my_project_ss1.jpg"),
+  require("./assets/images/my_project_ss2.jpg"),
+]
+```
 
 Other common edits:
 
@@ -128,7 +142,7 @@ Other common edits:
 
 Deployment is handled by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml):
 
-1. Triggered on push to `master` (or manually via workflow dispatch)
+1. Triggered on push to `main` (or manually via workflow dispatch)
 2. Installs dependencies and runs `npm run build`
 3. Publishes the `build/` folder to the `gh-pages` branch
 
@@ -188,10 +202,10 @@ dnasok.github.io/
 │   │   │   └── talksCardBack.svg       # Talks card background
 │   │   └── lottie/                     # Lottie animation JSON files
 │   │       ├── splashAnimation.json    # Splash screen
-│   │       ├── landingAnimation.json   # Greeting/hero section
-│   │       ├── codingAnimation.json    # Skills section
-│   │       ├── build.json              # Proficiency section
-│   │       └── email.json              # Contact section
+│   │       ├── greetingAnimation.json  # Greeting/hero section
+│   │       ├── skillAnimation.json     # Skills section
+│   │       ├── progressAnimation.json  # Proficiency section
+│   │       └── contactAnimation.json   # Contact section
 │   ├── components/             # Reusable UI building blocks
 │   │   ├── achievementCard/    # Achievement card display
 │   │   ├── blogCard/           # Blog post card
@@ -206,7 +220,8 @@ dnasok.github.io/
 │   │   ├── socialMedia/        # Social media icon links
 │   │   ├── softwareSkills/     # Skill icon badges
 │   │   ├── talkCard/           # Talk/presentation card
-│   │   └── ToggleSwitch/       # Dark/light mode toggle
+│   │   ├── ToggleSwitch/       # Dark/light mode toggle
+│   │   └── youtubeEmbed/       # Responsive 16:9 YouTube iframe wrapper
 │   ├── containers/             # Page sections (one folder per section)
 │   │   ├── Main.js             # Layout orchestrator — composes all sections
 │   │   ├── Main.scss           # Main layout styles
@@ -218,6 +233,7 @@ dnasok.github.io/
 │   │   ├── loading/            # Loading spinner for async content
 │   │   ├── podcast/            # Podcast embed section
 │   │   ├── profile/            # GitHub profile or fallback contact
+│   │   ├── projectDetail/      # Per-project detail page (route: /projects/:slug)
 │   │   ├── projects/           # Open-source GitHub projects section
 │   │   ├── skillProgress/      # Tech stack proficiency bars
 │   │   ├── skills/             # Skills and software icons
