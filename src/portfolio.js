@@ -25,9 +25,6 @@ const greeting = {
   subTitle: emoji(
     "Game Developer & Software Engineer focused on gameplay systems, custom engines, and shipping complete games using C++ and C#."
   ),
-  // subTitle: emoji(
-  //   "Hi, I’m Ko Sand, a passionate and driven student currently pursuing a Bachelor of Science with Honours in Computer Science in Interactive Media and Game Development at SIT-DigiPen Singapore. With a strong foundation in game development and software engineering, I specialize in building engaging gameplay experiences using Unity (C#) and custom engines (C++). My past internships and national service experience have shaped me into a fast learner who works well under pressure, communicates effectively in team settings, and delivers results. I’m currently seeking opportunities in game development or software engineering, where I can apply my skills, continue learning, and contribute meaningfully to exciting projects. Let’s connect, I’m always open to opportunities and collaboration!"
-  // ),
   resumeLink:
     "https://docs.google.com/document/d/1ezuVR4UCiUI4oDO93Bm3sBrIs_WNIDXzsd7WPcfeM3U/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -50,25 +47,29 @@ const skillsSection = {
   title: "What I Do",
   subTitle: "GAME DEVELOPER WITH STRONG SYSTEMS & ENGINEERING FOUNDATIONS",
   skills: [
-    emoji("🎮 Build gameplay systems and tools using C++ and C#"),
-    emoji("⚙️ Design modular, reusable engine and gameplay architectures"),
-    emoji("🧩 Work across the full development lifecycle — from prototype to release"),
-    emoji("🚀 Optimize performance and debug complex systems"),
-    emoji("🤝 Collaborate with engineers, designers, and artists in team environments")
+    emoji("🎮 Design and build gameplay systems, physics, and engine architecture using C++ and C#"),
+    emoji("🕹️ Ship complete games independently — from concept to publishing on Steam and Google Play"),
+    emoji("⚙️ Lead technical development on team projects: custom engines, ECS, collision, UI systems"),
+    emoji("🤖 Build and maintain automated test suites and CI/CD pipelines in software engineering roles"),
+    emoji("🥽 Develop immersive AR/VR and interactive media experiences in Unity"),
+    emoji("🤝 Collaborate across engineering, design, and art disciplines in agile team environments")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
-    { skillName: "C#", fontAwesomeClassname: "fas fa-code" },
-    { skillName: "Game Engines", fontAwesomeClassname: "fas fa-cogs" },
-    { skillName: "Unity", fontAwesomeClassname: "fab fa-unity" },
-    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
-    { skillName: "Visual Studio", fontAwesomeClassname: "fas fa-laptop-code" },
-    { skillName: "Windows", fontAwesomeClassname: "fab fa-windows" },
-    { skillName: "AR / VR", fontAwesomeClassname: "fas fa-vr-cardboard" },
-    { skillName: "Figma", fontAwesomeClassname: "fab fa-figma" }
+    { skillName: "C++",           fontAwesomeClassname: "fas fa-code" },
+    { skillName: "C#",            fontAwesomeClassname: "fas fa-code" },
+    { skillName: "Python",        fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Unity",         fontAwesomeClassname: "fab fa-unity" },
+    { skillName: "Unreal Engine", fontAwesomeClassname: "fas fa-gamepad" },
+    { skillName: "Git",           fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "GitHub",        fontAwesomeClassname: "fab fa-github" },
+    { skillName: "Jenkins / CI",  fontAwesomeClassname: "fas fa-cogs" },
+    { skillName: "AR / VR",       fontAwesomeClassname: "fas fa-vr-cardboard" },
+    { skillName: "Jira",          fontAwesomeClassname: "fab fa-jira" },
+    { skillName: "Figma",         fontAwesomeClassname: "fab fa-figma" },
+    { skillName: "AWS",           fontAwesomeClassname: "fab fa-aws" }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -83,7 +84,7 @@ const educationInfo = {
       logo: require("./assets/images/sit_logo.png"),
       subHeader: "Bachelor of Science with Honours in Computer Science in Interactive Media and Game Development",
       duration: "August 2023 - April 2027",
-      // desc: "Focused on game engine development, gameplay programming, and software engineering principles.",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -94,18 +95,14 @@ const educationInfo = {
       logo: require("./assets/images/nyp_logo.jpg"),
       subHeader: "Diploma in Game Development & Technology",
       duration: "April 2018 - March 2021",
-      // duration: "16 April 2018 - 18 March 2021",
-      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      // duration: "16 April 2018 - 18 March 2021"
     },
     {
       schoolName: "Institute of Technical Education",
       logo: require("./assets/images/ite_logo.jpg"),
       subHeader: "Higher Nitec in Games Programming & Development",
       duration: "April 2016 - March 2018",
-      // duration: "7 April 2016 - 20 March 2018",
-      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      // duration: "7 April 2016 - 20 March 2018"
     }
     ,
     {
@@ -113,9 +110,7 @@ const educationInfo = {
       logo: require("./assets/images/ite_logo.jpg"),
       subHeader: "Nitec in Social Media & Web Development",
       duration: "January 2014 - December 2015",
-      // duration: "12 January 2014 - 11 December 2015",
-      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      // duration: "12 January 2014 - 11 December 2015"
     }
   ]
 };
@@ -125,10 +120,12 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    { Stack: "Gameplay Programming", progressPercentage: "85%" },
-    { Stack: "Engine & Systems Development", progressPercentage: "80%" },
-    { Stack: "Unity Development", progressPercentage: "90%" },
-    { Stack: "C++ / C#", progressPercentage: "85%" }
+    { Stack: "Gameplay & Engine Programming",     progressPercentage: "85%" },
+    { Stack: "Unity Development",                 progressPercentage: "90%" },
+    { Stack: "C++ / C#",                          progressPercentage: "85%" },
+    { Stack: "Python / Test Automation",          progressPercentage: "75%" },
+    { Stack: "CI/CD & DevOps Tooling",            progressPercentage: "65%" },
+    { Stack: "AR / VR Development",               progressPercentage: "70%" }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -416,10 +413,6 @@ const achievementSection = {
       image: require("./assets/images/nyp_logo.jpg"),
       imageAlt: "Distinction in Business for Digital Media Industry",
       footerLink: [
-        // {
-        //   name: "Certification",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        // }
       ]
     },
     {
@@ -429,10 +422,6 @@ const achievementSection = {
       image: require("./assets/images/nyp_logo.jpg"),
       imageAlt: "Distinction in Principles of Game Design",
       footerLink: [
-        // {
-        //   name: "Certification",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        // }
       ]
     },
     {
@@ -442,10 +431,6 @@ const achievementSection = {
       image: require("./assets/images/ite_logo.jpg"),
       imageAlt: "Certificate of Excellence",
       footerLink: [
-        // {
-        //   name: "Certification",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        // }
       ]
     },
     {
@@ -455,10 +440,6 @@ const achievementSection = {
       image: require("./assets/images/ite_logo.jpg"),
       imageAlt: "Director’s List",
       footerLink: [
-        // {
-        //   name: "Certification",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        // }
       ]
     }
   ],
