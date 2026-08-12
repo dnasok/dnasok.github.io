@@ -220,11 +220,11 @@ const bigProjects = {
       detail: {
         tagline: "Sacrifice to survive. Escape the facility.",
         genre: "First-Person Puzzle Platformer",
-        engine: "Ermine Engine (Custom C++ Engine by ErmineWorks)",
+        engine: "Ermine Engine (Custom C++ Engine by Ermine Works)",
         platform: "PC",
         team: "15-Person Multidisciplinary Academic Team",
         duration: "Sep 2025 – Apr 2026",
-        role: "Tech Lead",
+        role: "Technical Lead",
         overview:
           "Machina is a first-person steampunk puzzle-platformer set in an experimental facility, where players sacrifice their own life essence to power a weapon that enables teleportation, blinding light, and enemy manipulation in order to escape. Built on the Ermine Engine — a custom C++ game engine developed by DigiPen students featuring ECS architecture, PBR rendering, Jolt physics, C# scripting, a real-time ImGui editor, and a full asset pipeline. As Tech Lead of a 15-member multidisciplinary team spanning programmers, designers, and artists, I was responsible for both technical direction and hands-on development, ensuring the project remained stable, scalable, and production-ready throughout.",
         contributions: [
@@ -235,13 +235,17 @@ const bigProjects = {
           "Improved engine usability and stability by refining editor systems and resolving complex runtime issues",
           "Actively supported teammates through debugging, profiling, testing, and code reviews"
         ],
-        techStack: ["C++", "Ermine Engine", "ECS", "C# Scripting", "Jolt Physics", "PBR / OpenGL", "ImGui", "Git"],
+        techStack: ["C++", "Ermine Engine", "ECS", "C# Scripting", "Jolt Physics", "PBR / OpenGL", "ImGui", "FMOD", "Git"],
         videos: [
           { label: "Game Trailer", youtubeId: "nZZCTPWUmuY" },
           { label: "Gameplay Showcase", youtubeId: "o_VmUnK94wQ" }
         ],
         screenshots: [
-          // Add screenshot paths here e.g. require("./assets/images/machina_ss1.jpg")
+          require("./assets/images/projects/machina/machina_start.jpg"),
+          require("./assets/images/projects/machina/machina_screenshot1.jpg"),
+          require("./assets/images/projects/machina/machina_screenshot2.jpg"),
+          require("./assets/images/projects/machina/machina_screenshot3.jpg"),
+          require("./assets/images/projects/machina/machina_screenshot4.jpg")
         ],
         links: [
           { name: "Game Trailer", url: "https://youtu.be/nZZCTPWUmuY" },
@@ -261,11 +265,11 @@ const bigProjects = {
       detail: {
         tagline: "Slash. Harvest. Save the world.",
         genre: "2D Action",
-        engine: "Custom C++ Engine (built in-house)",
+        engine: "CR Engine (Custom C++ Engine by Cozy Raccoons)",
         platform: "PC",
         team: "8-Person Multidisciplinary Academic Team",
         duration: "Sep 2024 – Apr 2025",
-        role: "Technical Lead / Engine & Gameplay Programmer",
+        role: "Technical Lead",
         overview:
           "Step into the paws of Mochi, a fearless fox chef on a wild culinary adventure! In this fast-paced 2D action game, slash through corrupted foes, snatch up lost souls, and unravel deliciously dark secrets. Brave treacherous dungeons, dodge handcrafted hazards, and cook up a plan to save a starving world by tracking down the leftovers of a long-lost deity. Built entirely on a custom C++ engine developed from the ground up by the team. Featured in the DigiPen Game Gallery and selected as part of the SG60 Games showcase.",
         contributions: [
@@ -276,14 +280,17 @@ const bigProjects = {
           "Integrated engine tools with gameplay systems to enable real-time combat, dynamic dungeon layouts, and smooth player interactions",
           "Collaborated closely with designers and artists to translate creative vision into performant, production-ready systems"
         ],
-        techStack: ["C++", "Custom Engine", "OpenGL", "FMOD", "Git"],
+        techStack: ["C++", "CR Engine", "OpenGL", "ImGui", "FMOD", "Git"],
         videos: [
           { label: "Game Trailer", youtubeId: "0_TAAYTXHKI" },
           { label: "Gameplay Showcase", youtubeId: "nMMa7cYqeYU" },
           { label: "Engine Showcase", youtubeId: "RvnJPcnqqn0" }
         ],
         screenshots: [
-          // Add screenshot paths here
+          require("./assets/images/projects/ukemochi/ukemochi_start.jpg"),
+          require("./assets/images/projects/ukemochi/ukemochi_screenshot1.jpg"),
+          require("./assets/images/projects/ukemochi/ukemochi_screenshot2.jpg"),
+          require("./assets/images/projects/ukemochi/ukemochi_screenshot3.jpg")
         ],
         links: [
           { name: "DigiPen Game Gallery", url: "https://games.digipen.edu/games/ukemochi" },
@@ -324,12 +331,16 @@ const bigProjects = {
           "Optimised performance across both PC and mobile platforms for responsive, consistent gameplay",
           "Handled the complete publishing pipeline for Steam (Steamworks) and Google Play including store pages, builds, and compliance"
         ],
-        techStack: ["Unity", "C#", "Steamworks SDK", "Google Play SDK", "Git"],
+        techStack: ["C#", "Unity", "Steamworks SDK", "Google Play SDK", "Git"],
         videos: [
           { label: "Game Trailer", youtubeId: "FiQC6qBMrrQ" }
         ],
         screenshots: [
-          // Add screenshot paths here
+          require("./assets/images/projects/tiny-arcade-racers/TAR_start.jpg"),
+          require("./assets/images/projects/tiny-arcade-racers/TAR_screenshot1.png"),
+          require("./assets/images/projects/tiny-arcade-racers/TAR_screenshot2.png"),
+          require("./assets/images/projects/tiny-arcade-racers/TAR_screenshot3.png"),
+          require("./assets/images/projects/tiny-arcade-racers/TAR_screenshot4.png")
         ],
         links: [
           { name: "Game Trailer", url: "https://youtu.be/FiQC6qBMrrQ" },
@@ -367,12 +378,15 @@ const bigProjects = {
           "Implemented a Save & Load system for persistent high scores and an Audio Manager for music and SFX",
           "Integrated Google AdMob interstitial ads and handled the full Google Play publishing pipeline"
         ],
-        techStack: ["Unity", "C#", "Google AdMob", "Google Play SDK", "Git"],
+        techStack: ["C#", "Unity", "Google AdMob", "Google Play SDK", "Git"],
         videos: [
           { label: "Game Trailer", youtubeId: "QQ5hHTTyYzQ" }
         ],
         screenshots: [
-          // Add screenshot paths here
+          require("./assets/images/projects/orion-chasers/OC_start.png"),
+          require("./assets/images/projects/orion-chasers/OC_screenshot1.png"),
+          require("./assets/images/projects/orion-chasers/OC_screenshot2.png"),
+          require("./assets/images/projects/orion-chasers/OC_screenshot3.png")
         ],
         links: [
           { name: "Game Trailer", url: "https://youtu.be/QQ5hHTTyYzQ" },
