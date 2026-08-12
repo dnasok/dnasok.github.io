@@ -1,4 +1,4 @@
-/* Change this file to get your personal Portfolio */
+﻿/* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
@@ -163,7 +163,8 @@ const workExperiences = {
       role: "Protective Security Command Trooper",
       company: "Singapore Police Force",
       companylogo: require("./assets/images/spf_logo.jpg"),
-      date: "19 May 2021 – 18 May 2023",
+      date: "May 2021 – May 2023",
+      // date: "19 May 2021 – 18 May 2023",
       desc: "Served as a Protective Security Command Trooper, safeguarding critical infrastructure and supporting national security operations under high-pressure conditions.",
       descBullets: [
         "Conducted high-visibility police patrols at security-sensitive locations and safeguarded key installations and government buildings.",
@@ -175,7 +176,8 @@ const workExperiences = {
       role: "Software Engineer Intern",
       company: "VizioFly - Virtual Reality Singapore",
       companylogo: require("./assets/images/viziofly_logo.jpg"),
-      date: "1 June 2020 – 21 August 2020",
+      date: "June 2020 – August 2020",
+      // date: "1 June 2020 – 21 August 2020",
       desc: "Developed immersive AR/VR experiences in Unity for corporate, tourism, and education clients, with a focus on UI/UX and cross-platform performance.",
       descBullets: [
         "Contributed to immersive AR/VR development for corporate, tourism, and educational clients, building interactive media content using Unity and C#.",
@@ -187,7 +189,8 @@ const workExperiences = {
       role: "Software Engineer Intern",
       company: "Viswire",
       companylogo: require("./assets/images/viswire_logo.jpg"),
-      date: "2 October 2017 – 29 December 2017",
+      date: "October 2017 – December 2017",
+      // date: "2 October 2017 – 29 December 2017",
       desc: "Developed real-time simulation systems in Unity for professional training and research, emphasizing visual accuracy and interactivity.",
       descBullets: [
         "Assisted in developing real-time simulation systems for professional training and research, focusing on visual realism and performance efficiency.",
@@ -407,57 +410,84 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Awards & Achievements 🏆"),
-  subtitle: "Academic Excellence and Recognition",
+  subtitle: "Certifications, Academic Excellence and Recognition",
 
   achievementsCards: [
     {
+      title: "GitHub Foundations",
+      subtitle: "Microsoft · Issued Jul 2026 · Expires Jul 2028",
+      image: require("./assets/images/microsoft_logo.svg.webp"),
+      imageAlt: "Microsoft / GitHub Logo",
+      footerLink: [
+        {
+          name: "Show Credential",
+          url: "https://learn.microsoft.com/api/credentials/share/en-gb/dnasok/CD49961ECD8CCD46?sharingId=241BB7760858284E"
+        }
+      ]
+    },
+    {
+      title: "Google IT Support Professional Certificate",
+      subtitle: "Google · Issued Jul 2026",
+      image: require("./assets/images/google_logo.png"),
+      imageAlt: "Google Logo",
+      footerLink: [
+        {
+          name: "Show Credential",
+          url: "https://www.coursera.org/account/accomplishments/specialization/M4EM6MVQQ1XY"
+        }
+      ]
+    },
+    {
+      title: "Google AI Professional Certificate",
+      subtitle: "Google · Issued Jul 2026",
+      image: require("./assets/images/google_logo.png"),
+      imageAlt: "Google Logo",
+      footerLink: [
+        {
+          name: "Show Credential",
+          url: "https://www.coursera.org/account/accomplishments/specialization/69XF8KAN1OMU"
+        }
+      ]
+    },
+    {
       title: "Unity Certified Associate: Game Developer",
-      subtitle:
-        "Unity - March 2021",
+      subtitle: "Unity · Issued Mar 2021 · Expired Mar 2024",
       image: require("./assets/images/unity_logo.jpg"),
       imageAlt: "Unity Certified Associate: Game Developer",
       footerLink: [
         {
-          name: "Certification",
+          name: "Show Credential",
           url: "https://www.youracclaim.com/badges/e4a4c880-6362-457a-ad51-63d348871792?source=linked_in_profile"
         }
       ]
     },
     {
       title: "Distinction in Business for Digital Media Industry",
-      subtitle:
-        "Nanyang Polytechnic - March 2021",
+      subtitle: "Nanyang Polytechnic · March 2021",
       image: require("./assets/images/nyp_logo.jpg"),
       imageAlt: "Distinction in Business for Digital Media Industry",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "Distinction in Principles of Game Design",
-      subtitle:
-        "Nanyang Polytechnic - September 2018",
+      subtitle: "Nanyang Polytechnic · September 2018",
       image: require("./assets/images/nyp_logo.jpg"),
       imageAlt: "Distinction in Principles of Game Design",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "Certificate of Excellence for Industrial Attachment Programme",
-      subtitle:
-        "Institute of Technical Education - December 2017",
+      subtitle: "Institute of Technical Education · December 2017",
       image: require("./assets/images/ite_logo.jpg"),
       imageAlt: "Certificate of Excellence",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
-      title: "Director’s List",
-      subtitle:
-        "Institute of Technical Education - June 2014",
+      title: "Director's List",
+      subtitle: "Institute of Technical Education · June 2014",
       image: require("./assets/images/ite_logo.jpg"),
-      imageAlt: "Director’s List",
-      footerLink: [
-      ]
+      imageAlt: "Director's List",
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
