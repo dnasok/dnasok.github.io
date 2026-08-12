@@ -347,25 +347,27 @@ const bigProjects = {
       slug: "orion-chasers",
       image: require("./assets/images/oc_logo.png"),
       projectName: "Orion Chasers",
-      projectDesc: "Space-themed endless runner focused on score-chasing mechanics and mobile-first controls. Published on Google Play.",
+      projectDesc: "Space-themed endless runner where players guide Orion the Astronaut through a sci-fi environment, collecting gems and dodging obstacles for the highest score. Published on Google Play.",
       detail: {
-        tagline: "Chase the stars. Beat your score.",
+        tagline: "Run further. Collect more. Beat your score.",
         genre: "Endless Runner",
         engine: "Unity",
         platform: "Android (Google Play)",
         team: "Solo / Indie",
-        duration: "~6 Months",
+        duration: "Jun 2022 – Sep 2022",
         role: "Solo Developer",
         overview:
-          "Orion Chasers is a space-themed endless runner designed from the ground up for mobile. The game focuses on tight, satisfying score-chasing gameplay with mobile-friendly one-touch controls. Developed and published independently on the Google Play Store under Dnasok Games.",
+          "Orion Chasers is a space-themed endless runner developed and published independently by Dnasok Games. Play as Orion the Astronaut exploring a sci-fi horizon — run as far as possible, collect rare gems across 8 handcrafted layouts, and dodge deadly obstacles to achieve the highest score. Released on Google Play Store for Android on September 11, 2022.",
         contributions: [
-          "Designed and built the core endless runner loop including procedural obstacle generation and difficulty scaling",
-          "Implemented mobile-optimised one-touch control scheme with responsive feel",
-          "Built a persistent high score and leaderboard system",
-          "Designed all in-game UI, menus, and feedback systems",
-          "Handled full Google Play publishing pipeline including store listing and APK submission"
+          "Designed and built the full endless runner loop: 8 distinct layouts each with unique collectables and obstacles, managed by a Layout Manager and Game Flow Manager",
+          "Implemented dual input support via an Input Manager handling both standalone and mobile touch controls",
+          "Built the Player Controller and Camera Manager with smooth movement and responsive feel for mobile",
+          "Integrated player animations and a curved world shader for the signature arc-horizon visual effect",
+          "Developed all game menus: Main Menu, Game, Pause/Options, Results, and Credits panels",
+          "Implemented a Save & Load system for persistent high scores and an Audio Manager for music and SFX",
+          "Integrated Google AdMob interstitial ads and handled the full Google Play publishing pipeline"
         ],
-        techStack: ["Unity", "C#", "Google Play SDK", "Git"],
+        techStack: ["Unity", "C#", "Google AdMob", "Google Play SDK", "Git"],
         videos: [
           { label: "Game Trailer", youtubeId: "QQ5hHTTyYzQ" }
         ],
