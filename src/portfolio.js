@@ -216,25 +216,26 @@ const bigProjects = {
       slug: "machina",
       image: require("./assets/images/machina_logo.jpg"),
       projectName: "Machina",
-      projectDesc: "A first-person steampunk puzzle-platformer where players sacrifice life essence to power a weapon enabling teleportation, blinding light, and enemy manipulation.",
+      projectDesc: "A first-person steampunk puzzle-platformer where players sacrifice life essence to power a weapon enabling teleportation, blinding light, and enemy manipulation. Tech Lead of a 15-member multidisciplinary team.",
       detail: {
         tagline: "Sacrifice to survive. Escape the facility.",
         genre: "First-Person Puzzle Platformer",
-        engine: "Custom C++ Engine",
+        engine: "Ermine Engine (Custom C++ Engine by ErmineWorks)",
         platform: "PC",
-        team: "Academic Team Project",
-        duration: "1 Academic Year",
-        role: "Gameplay Programmer",
+        team: "15-Person Multidisciplinary Academic Team",
+        duration: "Sep 2025 – Apr 2026",
+        role: "Tech Lead",
         overview:
-          "Machina is a first-person steampunk puzzle-platformer set in an experimental facility. Players sacrifice their own life essence to power a weapon that grants three abilities — teleportation, blinding light, and enemy manipulation — in order to solve puzzles and escape. The game was built on a custom C++ engine as an academic project.",
+          "Machina is a first-person steampunk puzzle-platformer set in an experimental facility, where players sacrifice their own life essence to power a weapon that enables teleportation, blinding light, and enemy manipulation in order to escape. Built on the Ermine Engine — a custom C++ game engine developed by DigiPen students featuring ECS architecture, PBR rendering, Jolt physics, C# scripting, a real-time ImGui editor, and a full asset pipeline. As Tech Lead of a 15-member multidisciplinary team spanning programmers, designers, and artists, I was responsible for both technical direction and hands-on development, ensuring the project remained stable, scalable, and production-ready throughout.",
         contributions: [
-          "Designed and implemented the core life-essence resource system that governs all three weapon abilities",
-          "Programmed teleportation, light flash, and enemy manipulation mechanics with full state management",
-          "Built first-person player controller including movement, jumping, and interaction systems",
-          "Collaborated on level design to ensure puzzles were balanced around the resource expenditure loop",
-          "Integrated audio and visual feedback systems tied to ability usage and player health"
+          "Led technical decision-making and coordinated development across programmers, designers, and artists on a 15-person team",
+          "Designed and implemented asset management workflows to streamline iteration and reduce integration issues",
+          "Developed and improved internal tools, including an animation editor and enhancements to the engine editor interface and UX",
+          "Contributed to level design, focusing on puzzle readability, player flow, and mechanical clarity",
+          "Improved engine usability and stability by refining editor systems and resolving complex runtime issues",
+          "Actively supported teammates through debugging, profiling, testing, and code reviews"
         ],
-        techStack: ["C++", "Custom Engine", "GLFW", "OpenGL", "Git"],
+        techStack: ["C++", "Ermine Engine", "ECS", "C# Scripting", "Jolt Physics", "PBR / OpenGL", "ImGui", "Git"],
         videos: [
           { label: "Game Trailer", youtubeId: "nZZCTPWUmuY" },
           { label: "Gameplay Showcase", youtubeId: "o_VmUnK94wQ" }
@@ -256,24 +257,24 @@ const bigProjects = {
       slug: "ukemochi",
       image: require("./assets/images/ukemochi_logo.jpg"),
       projectName: "Ukemochi",
-      projectDesc: "2D action-adventure game built on a custom C++ engine. Led technical development for an 8-person team — physics, collision, UI systems, and engine architecture from scratch.",
+      projectDesc: "2D action game built on a custom C++ engine. Play as Mochi, a fox chef slashing through corrupted foes to save a starving world. Tech Lead of an 8-person multidisciplinary team.",
       detail: {
-        tagline: "Built from scratch. Shipped as a team.",
-        genre: "2D Action-Adventure",
+        tagline: "Slash. Harvest. Save the world.",
+        genre: "2D Action",
         engine: "Custom C++ Engine (built in-house)",
         platform: "PC",
-        team: "8-Person Academic Team",
-        duration: "1 Academic Year",
+        team: "8-Person Multidisciplinary Academic Team",
+        duration: "Sep 2024 – Apr 2025",
         role: "Technical Lead / Engine & Gameplay Programmer",
         overview:
-          "Ukemochi is a 2D action-adventure game developed entirely on a custom C++ engine built from the ground up by the team. As Technical Lead, I was responsible for core engine systems and overseeing the technical direction for a team of 8. The game was featured in the DigiPen Game Gallery and selected as part of the SG60 Games showcase.",
+          "Step into the paws of Mochi, a fearless fox chef on a wild culinary adventure! In this fast-paced 2D action game, slash through corrupted foes, snatch up lost souls, and unravel deliciously dark secrets. Brave treacherous dungeons, dodge handcrafted hazards, and cook up a plan to save a starving world by tracking down the leftovers of a long-lost deity. Built entirely on a custom C++ engine developed from the ground up by the team. Featured in the DigiPen Game Gallery and selected as part of the SG60 Games showcase.",
         contributions: [
-          "Led technical development for an 8-person team, owning the engine architecture and development roadmap",
-          "Designed and implemented a custom physics system including rigid body dynamics and broad/narrow phase collision detection",
-          "Built the UI framework from scratch, supporting menus, HUD elements, and in-game overlays",
-          "Developed the entity-component system powering all game objects and behaviours",
-          "Integrated and managed the audio system, scripting pipeline, and asset loading",
-          "Coordinated with designers and artists to establish tooling and asset pipeline workflows"
+          "Led an 8-member multidisciplinary team as Technical Lead, overseeing architecture and engine development",
+          "Designed and built a custom C++ game engine from the ground up to support scalable gameplay systems",
+          "Implemented core engine systems: Math Library, Physics Engine, Collision System, and Transformation System",
+          "Built gameplay-level systems: Dungeon Manager, Soul Manager, and In-Game UI",
+          "Integrated engine tools with gameplay systems to enable real-time combat, dynamic dungeon layouts, and smooth player interactions",
+          "Collaborated closely with designers and artists to translate creative vision into performant, production-ready systems"
         ],
         techStack: ["C++", "Custom Engine", "OpenGL", "FMOD", "Git"],
         videos: [
@@ -304,24 +305,24 @@ const bigProjects = {
       slug: "tiny-arcade-racers",
       image: require("./assets/images/tar_logo.png"),
       projectName: "Tiny Arcade Racers",
-      projectDesc: "Top-down 2.5D arcade racing game with AI opponents, time trials, and vehicle customization. Shipped independently on Steam and Google Play.",
+      projectDesc: "Top-down 2.5D arcade racing game with AI opponents, time trials, and vehicle customization. Independently developed and shipped on Steam and Google Play.",
       detail: {
         tagline: "Race. Customise. Compete.",
         genre: "Arcade Racing",
         engine: "Unity",
         platform: "PC (Steam) · Android (Google Play)",
         team: "Solo / Indie",
-        duration: "~1 Year",
+        duration: "Oct 2021 – May 2022",
         role: "Solo Developer",
         overview:
-          "Tiny Arcade Racers is a top-down 2.5D arcade racing game featuring AI opponents with dynamic difficulty, time trial modes, and vehicle customization. Developed and published independently under Dnasok Games, the game is available on both Steam and the Google Play Store. Every aspect — design, programming, testing, and publishing — was handled solo.",
+          "Tiny Arcade Racers is a top-down 2.5D arcade racing game. Players can compete against AI drivers in the World Tour, race for their best time in Time Trial, or customise their vehicle colours in the in-game garage. Developed and published independently under Dnasok Games for both Windows and Android.",
         contributions: [
-          "Designed and programmed all gameplay systems including racing AI, lap tracking, and vehicle physics",
-          "Implemented a vehicle customization system with visual and stat-affecting components",
-          "Built time trial mode with ghost car recording and playback",
-          "Created adaptive AI opponents that scale difficulty based on player performance",
-          "Handled full publishing pipeline for Steam (Steamworks) and Google Play including store pages, builds, and compliance",
-          "Designed all UI/UX including menus, HUD, and results screens"
+          "Developed and published Tiny Arcade Racers as a commercial indie project available on Steam and Google Play Store",
+          "Designed and programmed all core gameplay mechanics: racing AI, lap tracking, vehicle physics, and World Tour mode",
+          "Built Time Trial mode with ghost car recording and playback for competitive time chasing",
+          "Implemented the in-game garage system for vehicle colour customisation",
+          "Optimised performance across both PC and mobile platforms for responsive, consistent gameplay",
+          "Handled the complete publishing pipeline for Steam (Steamworks) and Google Play including store pages, builds, and compliance"
         ],
         techStack: ["Unity", "C#", "Steamworks SDK", "Google Play SDK", "Git"],
         videos: [
