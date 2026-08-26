@@ -58,18 +58,18 @@ const skillsSection = {
   /* Make Sure to include correct Font Awesome Classname to view your icon https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    { skillName: "C++",           fontAwesomeClassname: "fas fa-code" },
-    { skillName: "C#",            fontAwesomeClassname: "fas fa-code" },
-    { skillName: "Python",        fontAwesomeClassname: "fab fa-python" },
-    { skillName: "Unity",         fontAwesomeClassname: "fab fa-unity" },
+    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "C#", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Unity", fontAwesomeClassname: "fab fa-unity" },
     { skillName: "Unreal Engine", fontAwesomeClassname: "fas fa-gamepad" },
-    { skillName: "Git",           fontAwesomeClassname: "fab fa-git-alt" },
-    { skillName: "GitHub",        fontAwesomeClassname: "fab fa-github" },
-    { skillName: "Jenkins / CI",  fontAwesomeClassname: "fas fa-cogs" },
-    { skillName: "AR / VR",       fontAwesomeClassname: "fas fa-vr-cardboard" },
-    { skillName: "Jira",          fontAwesomeClassname: "fab fa-jira" },
-    { skillName: "Figma",         fontAwesomeClassname: "fab fa-figma" },
-    { skillName: "AWS",           fontAwesomeClassname: "fab fa-aws" }
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "GitHub", fontAwesomeClassname: "fab fa-github" },
+    { skillName: "Jenkins / CI", fontAwesomeClassname: "fas fa-cogs" },
+    { skillName: "AR / VR", fontAwesomeClassname: "fas fa-vr-cardboard" },
+    { skillName: "Jira", fontAwesomeClassname: "fab fa-jira" },
+    { skillName: "Figma", fontAwesomeClassname: "fab fa-figma" },
+    { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -81,7 +81,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Singapore Institute of Technology – DigiPen Institute of Technology",
-      logo: require("./assets/images/sit_logo.png"),
+      logo: require("./assets/images/education/sit_logo.png"),
       subHeader: "Bachelor of Science with Honours in Computer Science in Interactive Media and Game Development",
       duration: "August 2023 - April 2027",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -92,14 +92,14 @@ const educationInfo = {
     },
     {
       schoolName: "Nanyang Polytechnic",
-      logo: require("./assets/images/nyp_logo.jpg"),
+      logo: require("./assets/images/education/nyp_logo.jpg"),
       subHeader: "Diploma in Game Development & Technology",
       duration: "April 2018 - March 2021",
       // duration: "16 April 2018 - 18 March 2021"
     },
     {
       schoolName: "Institute of Technical Education",
-      logo: require("./assets/images/ite_logo.jpg"),
+      logo: require("./assets/images/education/ite_logo.jpg"),
       subHeader: "Higher Nitec in Games Programming & Development",
       duration: "April 2016 - March 2018",
       // duration: "7 April 2016 - 20 March 2018"
@@ -107,7 +107,7 @@ const educationInfo = {
     ,
     {
       schoolName: "Institute of Technical Education",
-      logo: require("./assets/images/ite_logo.jpg"),
+      logo: require("./assets/images/education/ite_logo.jpg"),
       subHeader: "Nitec in Social Media & Web Development",
       duration: "January 2014 - December 2015",
       // duration: "12 January 2014 - 11 December 2015"
@@ -120,12 +120,12 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    { Stack: "Gameplay & Engine Programming",     progressPercentage: "85%" },
-    { Stack: "Unity Development",                 progressPercentage: "90%" },
-    { Stack: "C++ / C#",                          progressPercentage: "85%" },
-    { Stack: "Python / Test Automation",          progressPercentage: "75%" },
-    { Stack: "CI/CD & DevOps Tooling",            progressPercentage: "65%" },
-    { Stack: "AR / VR Development",               progressPercentage: "70%" }
+    { Stack: "Gameplay & Engine Programming", progressPercentage: "85%" },
+    { Stack: "Unity Development", progressPercentage: "90%" },
+    { Stack: "C++ / C#", progressPercentage: "85%" },
+    { Stack: "Python / Test Automation", progressPercentage: "75%" },
+    { Stack: "CI/CD & DevOps Tooling", progressPercentage: "65%" },
+    { Stack: "AR / VR Development", progressPercentage: "70%" }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -138,7 +138,7 @@ const workExperiences = {
     {
       role: "Software Engineer Intern",
       company: "DBS Bank",
-      companylogo: require("./assets/images/dbs_logo.jpg"),
+      companylogo: require("./assets/images/experiences/dbs_logo.jpg"),
       date: "May 2026 – Present",
       desc: "Building and maintaining automated test suites at DBS Bank to improve QA efficiency and coverage across product features.",
       descBullets: [
@@ -150,7 +150,7 @@ const workExperiences = {
     {
       role: "Game Developer (Self Employed)",
       company: "Dnasok Games",
-      companylogo: require("./assets/images/dnasokgames_logo.jpg"),
+      companylogo: require("./assets/images/experiences/dnasokgames_logo.jpg"),
       date: "October 2021 – March 2026",
       desc: "Making indie games during free time!",
       descBullets: [
@@ -162,9 +162,8 @@ const workExperiences = {
     {
       role: "Protective Security Command Trooper",
       company: "Singapore Police Force",
-      companylogo: require("./assets/images/spf_logo.jpg"),
+      companylogo: require("./assets/images/experiences/spf_logo.jpg"),
       date: "May 2021 – May 2023",
-      // date: "19 May 2021 – 18 May 2023",
       desc: "Served as a Protective Security Command Trooper, safeguarding critical infrastructure and supporting national security operations under high-pressure conditions.",
       descBullets: [
         "Conducted high-visibility police patrols at security-sensitive locations and safeguarded key installations and government buildings.",
@@ -175,9 +174,8 @@ const workExperiences = {
     {
       role: "Software Engineer Intern",
       company: "VizioFly - Virtual Reality Singapore",
-      companylogo: require("./assets/images/viziofly_logo.jpg"),
+      companylogo: require("./assets/images/experiences/viziofly_logo.jpg"),
       date: "June 2020 – August 2020",
-      // date: "1 June 2020 – 21 August 2020",
       desc: "Developed immersive AR/VR experiences in Unity for corporate, tourism, and education clients, with a focus on UI/UX and cross-platform performance.",
       descBullets: [
         "Contributed to immersive AR/VR development for corporate, tourism, and educational clients, building interactive media content using Unity and C#.",
@@ -188,9 +186,8 @@ const workExperiences = {
     {
       role: "Software Engineer Intern",
       company: "Viswire",
-      companylogo: require("./assets/images/viswire_logo.jpg"),
+      companylogo: require("./assets/images/experiences/viswire_logo.jpg"),
       date: "October 2017 – December 2017",
-      // date: "2 October 2017 – 29 December 2017",
       desc: "Developed real-time simulation systems in Unity for professional training and research, emphasizing visual accuracy and interactivity.",
       descBullets: [
         "Assisted in developing real-time simulation systems for professional training and research, focusing on visual realism and performance efficiency.",
@@ -217,7 +214,7 @@ const bigProjects = {
   projects: [
     {
       slug: "machina",
-      image: require("./assets/images/machina_logo.jpg"),
+      image: require("./assets/images/projects/machina/machina_logo.jpg"),
       projectName: "Machina",
       projectDesc: "A first-person steampunk puzzle-platformer where players sacrifice life essence to power a weapon enabling teleportation, blinding light, and enemy manipulation. Tech Lead of a 15-member multidisciplinary team.",
       detail: {
@@ -262,7 +259,7 @@ const bigProjects = {
     },
     {
       slug: "ukemochi",
-      image: require("./assets/images/ukemochi_logo.jpg"),
+      image: require("./assets/images/projects/ukemochi/ukemochi_start.jpg"),
       projectName: "Ukemochi",
       projectDesc: "2D action game built on a custom C++ engine. Play as Mochi, a fox chef slashing through corrupted foes to save a starving world. Tech Lead of an 8-person multidisciplinary team.",
       detail: {
@@ -313,7 +310,7 @@ const bigProjects = {
     },
     {
       slug: "tiny-arcade-racers",
-      image: require("./assets/images/tar_logo.png"),
+      image: require("./assets/images/projects/tiny-arcade-racers/TAR_logo.png"),
       projectName: "Tiny Arcade Racers",
       projectDesc: "Top-down 2.5D arcade racing game with AI opponents, time trials, and vehicle customization. Independently developed and shipped on Steam and Google Play.",
       detail: {
@@ -359,7 +356,7 @@ const bigProjects = {
     },
     {
       slug: "orion-chasers",
-      image: require("./assets/images/oc_logo.png"),
+      image: require("./assets/images/projects/orion-chasers/OC_logo.png"),
       projectName: "Orion Chasers",
       projectDesc: "Space-themed endless runner where players guide Orion the Astronaut through a sci-fi environment, collecting gems and dodging obstacles for the highest score. Published on Google Play.",
       detail: {
@@ -409,14 +406,28 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Awards & Achievements 🏆"),
+  title: emoji("Achievements & Certifications"),
   subtitle: "Certifications, Academic Excellence and Recognition",
 
   achievementsCards: [
     {
+      title: "Champion – NexGen Tech Talent Day Hackathon",
+      subtitle:
+        "IMDA, NTUC's e2i, Amazon Web Services, Mandai Wildlife Group · Issued Jul 2026",
+      image: require("./assets/images/achievements/nexgen-tech-talent-day-hackathon.jpg"),
+      imageAlt: "NexGen Tech Talent Day Hackathon Logo",
+      footerLink: [
+        {
+          name: "Show Certificate",
+          url: "https://drive.google.com/file/d/1NXsGAR9bHxNqNMnfcJPH0Ny3RvMsS6MB/view?usp=sharing"
+        }
+      ]
+    },
+    {
       title: "GitHub Foundations",
-      subtitle: "Microsoft · Issued Jul 2026 · Expires Jul 2028",
-      image: require("./assets/images/microsoft_logo.svg.webp"),
+      subtitle:
+        "Microsoft · Issued Jul 2026 · Expires Jul 2028",
+      image: require("./assets/images/achievements/github-foundations.png"),
       imageAlt: "Microsoft / GitHub Logo",
       footerLink: [
         {
@@ -426,21 +437,10 @@ const achievementSection = {
       ]
     },
     {
-      title: "Google IT Support Professional Certificate",
-      subtitle: "Google · Issued Jul 2026",
-      image: require("./assets/images/google_logo.png"),
-      imageAlt: "Google Logo",
-      footerLink: [
-        {
-          name: "Show Credential",
-          url: "https://www.coursera.org/account/accomplishments/specialization/M4EM6MVQQ1XY"
-        }
-      ]
-    },
-    {
       title: "Google AI Professional Certificate",
-      subtitle: "Google · Issued Jul 2026",
-      image: require("./assets/images/google_logo.png"),
+      subtitle:
+        "Google · Issued Jul 2026",
+      image: require("./assets/images/achievements/google_logo.png"),
       imageAlt: "Google Logo",
       footerLink: [
         {
@@ -452,8 +452,8 @@ const achievementSection = {
     {
       title: "Unity Certified Associate: Game Developer",
       subtitle: "Unity · Issued Mar 2021 · Expired Mar 2024",
-      image: require("./assets/images/unity_logo.jpg"),
-      imageAlt: "Unity Certified Associate: Game Developer",
+      image: require("./assets/images/achievements/unity-certified-associate-game-developer.png"),
+      imageAlt: "Unity Logo",
       footerLink: [
         {
           name: "Show Credential",
@@ -462,31 +462,10 @@ const achievementSection = {
       ]
     },
     {
-      title: "Distinction in Business for Digital Media Industry",
-      subtitle: "Nanyang Polytechnic · March 2021",
-      image: require("./assets/images/nyp_logo.jpg"),
-      imageAlt: "Distinction in Business for Digital Media Industry",
-      footerLink: []
-    },
-    {
-      title: "Distinction in Principles of Game Design",
-      subtitle: "Nanyang Polytechnic · September 2018",
-      image: require("./assets/images/nyp_logo.jpg"),
-      imageAlt: "Distinction in Principles of Game Design",
-      footerLink: []
-    },
-    {
-      title: "Certificate of Excellence for Industrial Attachment Programme",
-      subtitle: "Institute of Technical Education · December 2017",
-      image: require("./assets/images/ite_logo.jpg"),
-      imageAlt: "Certificate of Excellence",
-      footerLink: []
-    },
-    {
-      title: "Director's List",
-      subtitle: "Institute of Technical Education · June 2014",
-      image: require("./assets/images/ite_logo.jpg"),
-      imageAlt: "Director's List",
+      title: "Distinction in Business for Digital Media Industry and Principles of Game Design",
+      subtitle: "Nanyang Polytechnic · March 2021 & September 2018",
+      image: require("./assets/images/education/nyp_logo.jpg"),
+      imageAlt: "Nanyang Polytechnic Logo",
       footerLink: []
     }
   ],
