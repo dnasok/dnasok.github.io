@@ -1,10 +1,8 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import contactAnimation from "../../assets/lottie/contactAnimation";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
@@ -53,14 +51,11 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={contactAnimation} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
-            )}
+            <img
+              className="contact-photo"
+              alt="Lum Ko Sand"
+              src={require("../../assets/images/personal_photo.jpg")}
+            ></img>
           </div>
         </div>
       </div>
