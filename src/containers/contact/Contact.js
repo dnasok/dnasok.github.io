@@ -54,7 +54,7 @@ export default function Contact() {
             <img
               className="contact-photo"
               alt="Lum Ko Sand"
-              src={require("../../assets/images/personal_photo.jpg")}
+              src={require("../../assets/images/personal_photo.png")}
             ></img>
           </div>
         </div>
