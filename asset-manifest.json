@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d44fb50.css",
-    "main.js": "/static/js/main.42c353aa.js",
+    "main.css": "/static/css/main.def39984.css",
+    "main.js": "/static/js/main.148fcb02.js",
     "static/css/487.1eb05f47.chunk.css": "/static/css/487.1eb05f47.chunk.css",
     "static/js/487.f21af58c.chunk.js": "/static/js/487.f21af58c.chunk.js",
     "static/css/990.5fc27a67.chunk.css": "/static/css/990.5fc27a67.chunk.css",
-    "static/js/990.f96acaa1.chunk.js": "/static/js/990.f96acaa1.chunk.js",
+    "static/js/990.bbbf5743.chunk.js": "/static/js/990.bbbf5743.chunk.js",
     "static/media/TAR_screenshot1.png": "/static/media/TAR_screenshot1.fb1b89a89433c3193734.png",
     "static/media/TAR_screenshot2.png": "/static/media/TAR_screenshot2.ce1407ca565e967d9df5.png",
     "static/media/TAR_screenshot3.png": "/static/media/TAR_screenshot3.e492131cb87cc52bbfa6.png",
@@ -14,7 +14,7 @@
     "static/media/OC_screenshot2.png": "/static/media/OC_screenshot2.c5713bed424c572a7d19.png",
     "static/media/OC_start.png": "/static/media/OC_start.014d06aec74b5d25d3cd.png",
     "static/media/TAR_screenshot4.png": "/static/media/TAR_screenshot4.1cdeba05512715ebd72b.png",
-    "static/media/personal_photo.jpg": "/static/media/personal_photo.af7f13940aea936dd6d2.jpg",
+    "static/media/personal_photo.jpg": "/static/media/personal_photo.c226a7fc14592311a3aa.jpg",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/TAR_start.jpg": "/static/media/TAR_start.721c89f7682257f28800.jpg",
     "static/media/machina_screenshot4.jpg": "/static/media/machina_screenshot4.9251725c38105bfe1328.jpg",
@@ -33,6 +33,7 @@
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/ukemochi_screenshot1.jpg": "/static/media/ukemochi_screenshot1.bc22877a400ed72e60ac.jpg",
     "static/media/github-foundations.png": "/static/media/github-foundations.55139e01665a849a0a46.png",
+    "static/media/personal_logo.png": "/static/media/personal_logo.f467001256a5419f0e07.png",
     "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/unity-certified-associate-game-developer.png": "/static/media/unity-certified-associate-game-developer.58abdbcf57bc0f00291e.png",
     "static/media/viswire_logo.jpg": "/static/media/viswire_logo.168c2fd3156023fb1af0.jpg",
@@ -43,15 +44,15 @@
     "static/media/viziofly_logo.jpg": "/static/media/viziofly_logo.b27f809ce5d1816c03f0.jpg",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.4d44fb50.css.map": "/static/css/main.4d44fb50.css.map",
-    "main.42c353aa.js.map": "/static/js/main.42c353aa.js.map",
+    "main.def39984.css.map": "/static/css/main.def39984.css.map",
+    "main.148fcb02.js.map": "/static/js/main.148fcb02.js.map",
     "487.1eb05f47.chunk.css.map": "/static/css/487.1eb05f47.chunk.css.map",
     "487.f21af58c.chunk.js.map": "/static/js/487.f21af58c.chunk.js.map",
     "990.5fc27a67.chunk.css.map": "/static/css/990.5fc27a67.chunk.css.map",
-    "990.f96acaa1.chunk.js.map": "/static/js/990.f96acaa1.chunk.js.map"
+    "990.bbbf5743.chunk.js.map": "/static/js/990.bbbf5743.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d44fb50.css",
-    "static/js/main.42c353aa.js"
+    "static/css/main.def39984.css",
+    "static/js/main.148fcb02.js"
   ]
 }
