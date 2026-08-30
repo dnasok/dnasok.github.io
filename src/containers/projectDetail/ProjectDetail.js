@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import "./ProjectDetail.scss";
 import {bigProjects} from "../../portfolio";
 import {useParams, useHistory} from "react-router-dom";
@@ -11,12 +11,26 @@ export default function ProjectDetail() {
   const {slug} = useParams();
   const history = useHistory();
   const {isDark} = useContext(StyleContext);
+  const [selectedScreenshot, setSelectedScreenshot] = useState(null);
 
   const project = bigProjects.projects.find((p) => p.slug === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    if (!selectedScreenshot) return;
+
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setSelectedScreenshot(null);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [selectedScreenshot]);
 
   if (!project || !project.detail) {
     return (
@@ -214,17 +228,54 @@ export default function ProjectDetail() {
             </h2>
             <div className="screenshots-grid">
               {detail.screenshots.map((screenshot, i) => (
-                <img
+                <button
                   key={i}
-                  src={screenshot}
-                  alt={`${project.projectName} screenshot ${i + 1}`}
-                  className="screenshot-image"
-                />
+                  type="button"
+                  className="screenshot-button"
+                  onClick={() => setSelectedScreenshot({src: screenshot, alt: `${project.projectName} screenshot ${i + 1}`})}
+                  aria-label={`Open screenshot ${i + 1}`}
+                >
+                  <img
+                    src={screenshot}
+                    alt={`${project.projectName} screenshot ${i + 1}`}
+                    className="screenshot-image"
+                  />
+                </button>
               ))}
             </div>
             {detail.screenshots.length === 0 && (
               <p className="placeholder-text">Screenshots coming soon!</p>
             )}
+          </div>
+        )}
+
+        {selectedScreenshot && (
+          <div
+            className="screenshot-preview-backdrop"
+            onClick={() => setSelectedScreenshot(null)}
+            role="presentation"
+          >
+            <div
+              className="screenshot-preview-modal"
+              onClick={(event) => event.stopPropagation()}
+              role="dialog"
+              aria-modal="true"
+              aria-label={selectedScreenshot.alt}
+            >
+              <button
+                type="button"
+                className="preview-close-button"
+                onClick={() => setSelectedScreenshot(null)}
+                aria-label="Close screenshot preview"
+              >
+                ×
+              </button>
+              <img
+                src={selectedScreenshot.src}
+                alt={selectedScreenshot.alt}
+                className="preview-image"
+              />
+            </div>
           </div>
         )}
 
