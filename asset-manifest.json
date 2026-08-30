@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.def39984.css",
-    "main.js": "/static/js/main.148fcb02.js",
+    "main.js": "/static/js/main.3e86ac10.js",
     "static/css/487.1eb05f47.chunk.css": "/static/css/487.1eb05f47.chunk.css",
     "static/js/487.f21af58c.chunk.js": "/static/js/487.f21af58c.chunk.js",
     "static/css/990.5fc27a67.chunk.css": "/static/css/990.5fc27a67.chunk.css",
@@ -12,9 +12,9 @@
     "static/media/OC_screenshot3.png": "/static/media/OC_screenshot3.ca72aee9f8456ac96f42.png",
     "static/media/OC_screenshot1.png": "/static/media/OC_screenshot1.07935a5198ff6983b1a9.png",
     "static/media/OC_screenshot2.png": "/static/media/OC_screenshot2.c5713bed424c572a7d19.png",
+    "static/media/personal_photo.png": "/static/media/personal_photo.27067d05c9ea28ca0256.png",
     "static/media/OC_start.png": "/static/media/OC_start.014d06aec74b5d25d3cd.png",
     "static/media/TAR_screenshot4.png": "/static/media/TAR_screenshot4.1cdeba05512715ebd72b.png",
-    "static/media/personal_photo.jpg": "/static/media/personal_photo.c226a7fc14592311a3aa.jpg",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/TAR_start.jpg": "/static/media/TAR_start.721c89f7682257f28800.jpg",
     "static/media/machina_screenshot4.jpg": "/static/media/machina_screenshot4.9251725c38105bfe1328.jpg",
@@ -45,7 +45,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.def39984.css.map": "/static/css/main.def39984.css.map",
-    "main.148fcb02.js.map": "/static/js/main.148fcb02.js.map",
+    "main.3e86ac10.js.map": "/static/js/main.3e86ac10.js.map",
     "487.1eb05f47.chunk.css.map": "/static/css/487.1eb05f47.chunk.css.map",
     "487.f21af58c.chunk.js.map": "/static/js/487.f21af58c.chunk.js.map",
     "990.5fc27a67.chunk.css.map": "/static/css/990.5fc27a67.chunk.css.map",
@@ -53,6 +53,6 @@
   },
   "entrypoints": [
     "static/css/main.def39984.css",
-    "static/js/main.148fcb02.js"
+    "static/js/main.3e86ac10.js"
   ]
 }
