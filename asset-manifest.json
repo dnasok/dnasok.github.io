@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.541cc417.css",
-    "main.js": "/static/js/main.544e8f0a.js",
+    "main.css": "/static/css/main.14d50e8e.css",
+    "main.js": "/static/js/main.9ea7dd39.js",
     "static/css/487.1eb05f47.chunk.css": "/static/css/487.1eb05f47.chunk.css",
     "static/js/487.f21af58c.chunk.js": "/static/js/487.f21af58c.chunk.js",
     "static/css/990.5fc27a67.chunk.css": "/static/css/990.5fc27a67.chunk.css",
@@ -44,15 +44,15 @@
     "static/media/viziofly_logo.jpg": "/static/media/viziofly_logo.b27f809ce5d1816c03f0.jpg",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.541cc417.css.map": "/static/css/main.541cc417.css.map",
-    "main.544e8f0a.js.map": "/static/js/main.544e8f0a.js.map",
+    "main.14d50e8e.css.map": "/static/css/main.14d50e8e.css.map",
+    "main.9ea7dd39.js.map": "/static/js/main.9ea7dd39.js.map",
     "487.1eb05f47.chunk.css.map": "/static/css/487.1eb05f47.chunk.css.map",
     "487.f21af58c.chunk.js.map": "/static/js/487.f21af58c.chunk.js.map",
     "990.5fc27a67.chunk.css.map": "/static/css/990.5fc27a67.chunk.css.map",
     "990.bbbf5743.chunk.js.map": "/static/js/990.bbbf5743.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.541cc417.css",
-    "static/js/main.544e8f0a.js"
+    "static/css/main.14d50e8e.css",
+    "static/js/main.9ea7dd39.js"
   ]
 }
