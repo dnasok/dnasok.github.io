@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useRef, useState} from "react";
+import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -21,10 +21,6 @@ function Header() {
   const {isDark} = useContext(StyleContext);
   const history = useHistory();
   const location = useLocation();
-  const menuRef = useRef(null);
-  const [mobileMenuDropdown, setMobileMenuDropdown] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -37,30 +33,6 @@ function Header() {
 
   const isProjectPage = location.pathname.startsWith("/projects/");
 
-  useEffect(() => {
-    const checkOverflow = () => {
-      if (window.innerWidth <= 390) {
-        setMobileMenuDropdown(true);
-        return;
-      }
-
-      if (!menuRef.current || window.innerWidth > 767) {
-        setMobileMenuDropdown(false);
-        return;
-      }
-
-      const overflow = menuRef.current.scrollWidth > menuRef.current.clientWidth + 1;
-      setMobileMenuDropdown(overflow);
-      if (!overflow) {
-        setMobileMenuOpen(false);
-      }
-    };
-
-    checkOverflow();
-    window.addEventListener("resize", checkOverflow);
-    return () => window.removeEventListener("resize", checkOverflow);
-  }, []);
-
   const handleLogoClick = (e) => {
     e.preventDefault();
     if (isProjectPage) {
@@ -72,7 +44,6 @@ function Header() {
 
   const handleNavClick = (e, hash) => {
     e.preventDefault();
-    setMobileMenuOpen(false);
 
     const menuToggle = document.getElementById("menu-btn");
     if (menuToggle) {
@@ -172,57 +143,20 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        {mobileMenuDropdown ? (
-          <>
-            <div className="header-top-row">
-              <a href="/" className="logo" onClick={handleLogoClick}>
-                <span className="grey-color"> &lt;</span>
-                <span className="logo-name">{greeting.username}</span>
-                <span className="grey-color">/&gt;</span>
-              </a>
-
-              <button
-                type="button"
-                className={isDark ? "dark-mode mobile-menu-toggle" : "mobile-menu-toggle"}
-                onClick={() => setMobileMenuOpen((value) => !value)}
-                aria-expanded={mobileMenuOpen}
-                aria-label="Toggle section shortcuts"
-              >
-                <span className="hamburger-icon" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </button>
-            </div>
-
-            {mobileMenuOpen && (
-              <ul className={isDark ? "dark-menu menu dropdown-menu" : "menu dropdown-menu"}>
-                {navItems}
-              </ul>
-            )}
-          </>
-        ) : (
-          <>
-            <a href="/" className="logo" onClick={handleLogoClick}>
-              <span className="grey-color"> &lt;</span>
-              <span className="logo-name">{greeting.username}</span>
-              <span className="grey-color">/&gt;</span>
-            </a>
-
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label
-              className="menu-icon"
-              htmlFor="menu-btn"
-              style={{color: "white"}}
-            >
-              <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
-            </label>
-            <ul ref={menuRef} className={isDark ? "dark-menu menu" : "menu"}>
-              {navItems}
-            </ul>
-          </>
-        )}
+        <a href="/" className="logo" onClick={handleLogoClick}>
+          <span className="grey-color"> &lt;</span>
+          <span className="logo-name">{greeting.username}</span>
+          <span className="grey-color">/&gt;</span>
+        </a>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label
+          className="menu-icon"
+          htmlFor="menu-btn"
+          style={{color: "white"}}
+        >
+          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
+        </label>
+        <ul className={isDark ? "dark-menu menu" : "menu"}>{navItems}</ul>
       </header>
     </Headroom>
   );
