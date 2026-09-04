@@ -214,7 +214,7 @@ const bigProjects = {
   projects: [
     {
       slug: "machina",
-      image: require("./assets/images/projects/machina/machina_logo.jpg"),
+      image: require("./assets/images/projects/machina/machina_logo.png"),
       projectName: "Machina",
       projectDesc: "A first-person steampunk puzzle-platformer where players sacrifice life essence to power a weapon enabling teleportation, blinding light, and enemy manipulation. Tech Lead of a 15-member multidisciplinary team.",
       detail: {
@@ -241,11 +241,11 @@ const bigProjects = {
           { label: "Gameplay Showcase", youtubeId: "o_VmUnK94wQ" }
         ],
         screenshots: [
-          require("./assets/images/projects/machina/machina_start.jpg"),
-          require("./assets/images/projects/machina/machina_screenshot1.jpg"),
-          require("./assets/images/projects/machina/machina_screenshot2.jpg"),
-          require("./assets/images/projects/machina/machina_screenshot3.jpg"),
-          require("./assets/images/projects/machina/machina_screenshot4.jpg")
+          require("./assets/images/projects/machina/machina_start.png"),
+          require("./assets/images/projects/machina/machina_screenshot1.png"),
+          require("./assets/images/projects/machina/machina_screenshot2.png"),
+          require("./assets/images/projects/machina/machina_screenshot3.png"),
+          require("./assets/images/projects/machina/machina_screenshot4.png")
         ],
         links: [
           { name: "Game Trailer", url: "https://youtu.be/nZZCTPWUmuY" },
@@ -259,7 +259,7 @@ const bigProjects = {
     },
     {
       slug: "ukemochi",
-      image: require("./assets/images/projects/ukemochi/ukemochi_start.jpg"),
+      image: require("./assets/images/projects/ukemochi/ukemochi_start.png"),
       projectName: "Ukemochi",
       projectDesc: "2D action game built on a custom C++ engine. Play as Mochi, a fox chef slashing through corrupted foes to save a starving world. Tech Lead of an 8-person multidisciplinary team.",
       detail: {
@@ -287,10 +287,10 @@ const bigProjects = {
           { label: "Engine Showcase", youtubeId: "RvnJPcnqqn0" }
         ],
         screenshots: [
-          require("./assets/images/projects/ukemochi/ukemochi_start.jpg"),
-          require("./assets/images/projects/ukemochi/ukemochi_screenshot1.jpg"),
-          require("./assets/images/projects/ukemochi/ukemochi_screenshot2.jpg"),
-          require("./assets/images/projects/ukemochi/ukemochi_screenshot3.jpg")
+          require("./assets/images/projects/ukemochi/ukemochi_start.png"),
+          require("./assets/images/projects/ukemochi/ukemochi_screenshot1.png"),
+          require("./assets/images/projects/ukemochi/ukemochi_screenshot2.png"),
+          require("./assets/images/projects/ukemochi/ukemochi_screenshot3.png")
         ],
         links: [
           { name: "DigiPen Game Gallery", url: "https://games.digipen.edu/games/ukemochi" },
@@ -336,7 +336,7 @@ const bigProjects = {
           { label: "Game Trailer", youtubeId: "FiQC6qBMrrQ" }
         ],
         screenshots: [
-          require("./assets/images/projects/tiny-arcade-racers/TAR_start.jpg"),
+          require("./assets/images/projects/tiny-arcade-racers/TAR_start.png"),
           require("./assets/images/projects/tiny-arcade-racers/TAR_screenshot1.png"),
           require("./assets/images/projects/tiny-arcade-racers/TAR_screenshot2.png"),
           require("./assets/images/projects/tiny-arcade-racers/TAR_screenshot3.png"),
