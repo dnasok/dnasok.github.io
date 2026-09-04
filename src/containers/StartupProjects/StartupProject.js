@@ -75,6 +75,15 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    <span
+                      className={
+                        isDark
+                          ? "dark-mode project-details-link"
+                          : "project-details-link"
+                      }
+                    >
+                      View Project <span aria-hidden="true">→</span>
+                    </span>
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
@@ -96,7 +105,7 @@ export default function StartupProject() {
                       </div>
                     ) : null}
                   </div>
-                </div>
+                  </div>
               );
             })}
           </div>

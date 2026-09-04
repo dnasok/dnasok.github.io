@@ -44,6 +44,33 @@
 .project-detail {
   text-align: center;
 }
+.project-details-link {
+  align-items: center;
+  background: none;
+  border: 1px solid $lightBorder1;
+  border-radius: 6px;
+  color: $subTitle;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 500;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  padding: 0.45rem 1rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.project-details-link:hover {
+  border-color: $buttonColor;
+  color: $buttonColor;
+}
+.dark-mode.project-details-link {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: $textColorDark;
+}
+.dark-mode.project-details-link:hover {
+  border-color: $progressBarSpanBG;
+  color: $progressBarSpanBG;
+}
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
@@ -81,6 +108,12 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+}
+.project-card-footer {
+  border-top: 1px solid $lightBorder1;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
