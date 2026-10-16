@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.14d50e8e.css",
-    "main.js": "/static/js/main.9ea7dd39.js",
+    "main.js": "/static/js/main.585a1535.js",
     "static/css/487.1eb05f47.chunk.css": "/static/css/487.1eb05f47.chunk.css",
     "static/js/487.f21af58c.chunk.js": "/static/js/487.f21af58c.chunk.js",
     "static/css/990.5fc27a67.chunk.css": "/static/css/990.5fc27a67.chunk.css",
@@ -31,10 +31,11 @@
     "static/media/TAR_logo.png": "/static/media/TAR_logo.86969d8908c5f9207145.png",
     "static/media/ukemochi_start.png": "/static/media/ukemochi_start.4de87c477a03c00cedaf.png",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/nexgen-tech-talent-day-hackathon.jpg": "/static/media/nexgen-tech-talent-day-hackathon.6b4abb4bf188db2d6edb.jpg",
+    "static/media/nexgen-tech-talent-day-hackathon.png": "/static/media/nexgen-tech-talent-day-hackathon.2c05a0763fa106030812.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/github-foundations.png": "/static/media/github-foundations.55139e01665a849a0a46.png",
     "static/media/personal_logo.png": "/static/media/personal_logo.f467001256a5419f0e07.png",
+    "static/media/MongoDB-Certified-Associate-Developer.png": "/static/media/MongoDB-Certified-Associate-Developer.be4240ae4d253e30f96f.png",
     "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/unity-certified-associate-game-developer.png": "/static/media/unity-certified-associate-game-developer.58abdbcf57bc0f00291e.png",
     "static/media/viswire_logo.jpg": "/static/media/viswire_logo.168c2fd3156023fb1af0.jpg",
@@ -45,7 +46,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.14d50e8e.css.map": "/static/css/main.14d50e8e.css.map",
-    "main.9ea7dd39.js.map": "/static/js/main.9ea7dd39.js.map",
+    "main.585a1535.js.map": "/static/js/main.585a1535.js.map",
     "487.1eb05f47.chunk.css.map": "/static/css/487.1eb05f47.chunk.css.map",
     "487.f21af58c.chunk.js.map": "/static/js/487.f21af58c.chunk.js.map",
     "990.5fc27a67.chunk.css.map": "/static/css/990.5fc27a67.chunk.css.map",
@@ -53,6 +54,6 @@
   },
   "entrypoints": [
     "static/css/main.14d50e8e.css",
-    "static/js/main.9ea7dd39.js"
+    "static/js/main.585a1535.js"
   ]
 }
