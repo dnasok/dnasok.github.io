@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.14d50e8e.css",
-    "main.js": "/static/js/main.585a1535.js",
+    "main.js": "/static/js/main.abbf2823.js",
     "static/css/487.1eb05f47.chunk.css": "/static/css/487.1eb05f47.chunk.css",
     "static/js/487.f21af58c.chunk.js": "/static/js/487.f21af58c.chunk.js",
     "static/css/990.5fc27a67.chunk.css": "/static/css/990.5fc27a67.chunk.css",
     "static/js/990.bbbf5743.chunk.js": "/static/js/990.bbbf5743.chunk.js",
+    "static/media/betike_start.png": "/static/media/betike_start.94f862aeb590d602e68b.png",
     "static/media/TAR_screenshot1.png": "/static/media/TAR_screenshot1.fb1b89a89433c3193734.png",
     "static/media/TAR_screenshot2.png": "/static/media/TAR_screenshot2.ce1407ca565e967d9df5.png",
     "static/media/TAR_screenshot3.png": "/static/media/TAR_screenshot3.e492131cb87cc52bbfa6.png",
@@ -25,12 +26,15 @@
     "static/media/ukemochi_screenshot3.png": "/static/media/ukemochi_screenshot3.a321ead89b3a9b502ae1.png",
     "static/media/ukemochi_screenshot1.png": "/static/media/ukemochi_screenshot1.8688cfb51357fbe903a5.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/betike_screenshot1.png": "/static/media/betike_screenshot1.90f1292c13577cacc843.png",
+    "static/media/betike_screenshot2.png": "/static/media/betike_screenshot2.fc9d8d153493836e1f96.png",
     "static/media/OC_logo.png": "/static/media/OC_logo.55a7a53a41adfd39208a.png",
     "static/media/spf_logo.jpg": "/static/media/spf_logo.7a58cdb7c3d8b6e4b586.jpg",
     "static/media/machina_logo.png": "/static/media/machina_logo.f24ecd1ab0db2b871e82.png",
     "static/media/TAR_logo.png": "/static/media/TAR_logo.86969d8908c5f9207145.png",
     "static/media/ukemochi_start.png": "/static/media/ukemochi_start.4de87c477a03c00cedaf.png",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/betike-logo.png": "/static/media/betike-logo.40146f81d2fb825f71a8.png",
     "static/media/nexgen-tech-talent-day-hackathon.png": "/static/media/nexgen-tech-talent-day-hackathon.2c05a0763fa106030812.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/github-foundations.png": "/static/media/github-foundations.55139e01665a849a0a46.png",
@@ -46,7 +50,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.14d50e8e.css.map": "/static/css/main.14d50e8e.css.map",
-    "main.585a1535.js.map": "/static/js/main.585a1535.js.map",
+    "main.abbf2823.js.map": "/static/js/main.abbf2823.js.map",
     "487.1eb05f47.chunk.css.map": "/static/css/487.1eb05f47.chunk.css.map",
     "487.f21af58c.chunk.js.map": "/static/js/487.f21af58c.chunk.js.map",
     "990.5fc27a67.chunk.css.map": "/static/css/990.5fc27a67.chunk.css.map",
@@ -54,6 +58,6 @@
   },
   "entrypoints": [
     "static/css/main.14d50e8e.css",
-    "static/js/main.585a1535.js"
+    "static/js/main.abbf2823.js"
   ]
 }
