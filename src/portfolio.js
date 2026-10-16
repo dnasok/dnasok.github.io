@@ -23,7 +23,7 @@ const greeting = {
   username: "Lum Ko Sand",
   title: "Hi everyone, I'm Ko Sand!",
   subTitle: emoji(
-    "Game Developer & Software Engineer focused on gameplay systems, custom engines, and shipping complete games using C++ and C#."
+    "Software Engineer and Game Developer focused on gameplay systems, custom engines, and shipping complete games using C++ and C#."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1ezuVR4UCiUI4oDO93Bm3sBrIs_WNIDXzsd7WPcfeM3U/edit?usp=sharing", // Set to empty to hide the button
@@ -248,11 +248,13 @@ const bigProjects = {
           require("./assets/images/projects/machina/machina_screenshot4.png")
         ],
         links: [
+          { name: "GitHub Repository", url: "https://github.com/kirroko/Ermine-Engine" },
           { name: "Game Trailer", url: "https://youtu.be/nZZCTPWUmuY" },
           { name: "Gameplay Showcase", url: "https://youtu.be/o_VmUnK94wQ" }
         ]
       },
       footerLink: [
+        { name: "GitHub Repository", url: "https://github.com/kirroko/Ermine-Engine" },
         { name: "Game Trailer", url: "https://youtu.be/nZZCTPWUmuY" },
         { name: "Gameplay Showcase", url: "https://youtu.be/o_VmUnK94wQ" }
       ]
@@ -293,6 +295,7 @@ const bigProjects = {
           require("./assets/images/projects/ukemochi/ukemochi_screenshot3.png")
         ],
         links: [
+          { name: "GitHub Repository", url: "https://github.com/kirroko/CREngine" },
           { name: "DigiPen Game Gallery", url: "https://games.digipen.edu/games/ukemochi" },
           { name: "SG60 Games Feature", url: "https://sgga.org.sg/sg60-games" },
           { name: "Game Trailer", url: "https://youtu.be/0_TAAYTXHKI" },
@@ -301,6 +304,7 @@ const bigProjects = {
         ]
       },
       footerLink: [
+        { name: "GitHub Repository", url: "https://github.com/kirroko/CREngine" },
         { name: "DigiPen Game Gallery", url: "https://games.digipen.edu/games/ukemochi" },
         { name: "SG60 Games Feature", url: "https://sgga.org.sg/sg60-games" },
         { name: "Game Trailer", url: "https://youtu.be/0_TAAYTXHKI" },
@@ -411,15 +415,31 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "MongoDB Certified Developer, Associate (C100DEV)",
+      subtitle: "MongoDB · Issued Sept 2026",
+      image: require("./assets/images/achievements/MongoDB-Certified-Associate-Developer.png"),
+      imageAlt: "MongoDB Certified Developer, Associate Badge",
+      footerLink: [
+        {
+          name: "Show Credential",
+          url: "https://learn.mongodb.com/c/zspcJ8P2SvaSwhLPFPyMQg"
+        }
+      ]
+    },
+    {
       title: "Champion – NexGen Tech Talent Day Hackathon",
       subtitle:
         "IMDA, NTUC's e2i, Amazon Web Services, Mandai Wildlife Group · Issued Jul 2026",
-      image: require("./assets/images/achievements/nexgen-tech-talent-day-hackathon.jpg"),
+      image: require("./assets/images/achievements/nexgen-tech-talent-day-hackathon.png"),
       imageAlt: "NexGen Tech Talent Day Hackathon Logo",
       footerLink: [
         {
           name: "Show Certificate",
           url: "https://drive.google.com/file/d/1NXsGAR9bHxNqNMnfcJPH0Ny3RvMsS6MB/view?usp=sharing"
+        },
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/dnasok/WildSight"
         }
       ]
     },
