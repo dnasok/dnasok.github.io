@@ -222,7 +222,7 @@ const bigProjects = {
         genre: "First-Person Puzzle Platformer",
         engine: "Ermine Engine (Custom C++ Engine by Ermine Works)",
         platform: "PC",
-        team: "15-Person Multidisciplinary Academic Team",
+        team: "15-Person Multidisciplinary Academic Team (9 Programmers, 3 Designers, 3 Artists)",
         duration: "Sep 2025 – Apr 2026",
         role: "Technical Lead",
         overview:
@@ -269,7 +269,7 @@ const bigProjects = {
         genre: "2D Action",
         engine: "CR Engine (Custom C++ Engine by Cozy Raccoons)",
         platform: "PC",
-        team: "8-Person Multidisciplinary Academic Team",
+        team: "8-Person Multidisciplinary Academic Team (6 Programmers, 2 Artists)",
         duration: "Sep 2024 – Apr 2025",
         role: "Technical Lead",
         overview:
@@ -400,6 +400,46 @@ const bigProjects = {
       footerLink: [
         { name: "Game Trailer", url: "https://youtu.be/QQ5hHTTyYzQ" },
         { name: "Google Play", url: "https://play.google.com/store/apps/details?id=com.DnasokGames.OrionChasers" }
+      ]
+    },
+    {
+      slug: "betike",
+      image: require("./assets/images/projects/betike/betike-logo.png"),
+      projectName: "Betike",
+      projectDesc: "Mixed Reality furniture design software that lets users create, customize, and preview furniture catalogues in real-time 3D spaces.",
+      detail: {
+        tagline: "Design it. Place it. Experience it.",
+        genre: "Mixed Reality Design Tool",
+        engine: "Unity",
+        platform: "Oculus Quest · PC",
+        team: "6-Person Multidisciplinary Academic Team (3 Programmers, 3 Artists)",
+        duration: "Mar 2020 – May 2020",
+        role: "Physics, UI, and Graphics Programmer",
+        overview:
+          "Betike is a Mixed Reality design tool that helps furniture designers and consumers visualize products in real-time 3D spaces before purchase. Users can design room layouts, place and customize furniture, adjust indoor and outdoor lighting, save their work, and switch between Mixed Reality and Virtual Reality experiences.",
+        contributions: [
+          "Implemented physics systems and player controls for interacting with objects in virtual spaces",
+          "Developed UI systems for room selection, loading saved work, and displaying instructions",
+          "Implemented graphics features including the Lightweight Render Pipeline, lighting, shadows, and post-processing",
+          "Built room layouts, furniture interactions, material and colour customization, and lighting controls",
+          "Implemented prefab lightmapping and optimized the project for Oculus Quest and PC platforms",
+          "Developed save and load functionality, refactored code, documented systems with Doxygen, and recorded demo videos"
+        ],
+        techStack: ["C#", "Unity", "Mixed Reality", "Virtual Reality", "Oculus Quest", "Lightweight Render Pipeline"],
+        videos: [
+          { label: "Demo Showcase", youtubeId: "4CqQBswnpzw" }
+        ],
+        screenshots: [
+          require("./assets/images/projects/betike/betike_start.png"),
+          require("./assets/images/projects/betike/betike_screenshot1.png"),
+          require("./assets/images/projects/betike/betike_screenshot2.png")
+        ],
+        links: [
+          { name: "Demo Showcase", url: "https://youtu.be/4CqQBswnpzw" }
+        ]
+      },
+      footerLink: [
+        { name: "Demo Showcase", url: "https://youtu.be/4CqQBswnpzw" }
       ]
     }
   ],
